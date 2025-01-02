@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>web-developer/html</title>
+    <link rel="stylesheet" href="../assets/css/file-css.css">
+</head>
+<body>
+  <header>
+    <h1>HTML</h1>
+  </header>
+  <div class="html1">
+    <div class="bott-avaind">
+      <ul>
+        <li><a href="../index.html">pagina principale</a></li>
+        <li><a href="html1.html">pagina 1</a></li>
+        <li><a href="html3.html">pagina 3</a></li>
+      </ul>
+    </div>
+    <div>
+      <p>
+        <span class="y">INSERIRE UNA FAVICON :</span> <br>
+        Una favicon (abbreviazione di <span class="p">"favorite icon"</span> ) è un'icona che rappresenta visivamente un sito web.
+        <span class="p">Di solito, appare accanto al titolo della pagina nella barra degli indirizzi del browser</span>,
+         nella scheda del browser,e anche tra i preferiti. <br>
+        Serve a migliorare l'esperienza dell'utente, rendendo il sito più facilmente riconoscibile. <br>
+        Come inserire una favicon in HTML: <br>
+        Per inserire una favicon in una pagina HTML, è necessario aggiungere un tag <link> nel <head> del documento HTML. <br>
+        Ecco un esempio di codice: <br>
+        html <br>
+        &lthead&gt <br>
+          &ltlink rel="icon" href="favicon.ico" type="image/x-icon"&gt <br>
+        &lt/head&gt <br>
+        Spiegazione:
+        <span class="p">rel="icon"</span>: indica che il file è un'icona.
+        <span class="p">href="favicon.ico":</span> il percorso del file dell'icona. Può essere un file .ico, .png, o .jpg.
+        <span class="p">type="image/x-icon":</span> specifica il tipo di immagine (se usi .ico, è consigliato usare questo 
+        tipo). <br>
+        <span class="p">Il file della favicon (favicon.ico) deve essere posizionato nella directory principale</span> 
+        del sito o nel percorso indicato nel codice.
+      </p>
+      <p>
+        La <span class="y">sezione &lthead></span> di un documento HTML è una parte fondamentale della struttura di una pagina web. <br>
+        Essa contiene informazioni metadati, link a risorse esterne, e altre impostazioni che influenzano il comportamento
+        e la visualizzazione della pagina, ma non sono visibili direttamente all'utente nel corpo della pagina stessa. <br>
+        Ecco una panoramica dei principali elementi che si trovano solitamente all'interno del tag & l thead>: <br>
+        Contenuti principali della sezione &lthead>: &lt
+        &ltmeta>: Questi tag forniscono informazioni sul documento, come la codifica dei caratteri,
+         la descrizione della pagina o le parole chiave per i motori di ricerca. <br>
+        <span class="g"> &ltmeta charset="UTF-8">:</span><span class="p">Specifica la codifica dei caratteri</span>,
+         spesso UTF-8, che include la maggior parte dei caratteri utilizzati a livello globale. <br>
+         <span class="g">&ltmeta name="description" content="descrizione della pagina">:</span>
+         <span class="p">Fornisce una breve descrizione della pagina, utile per i motori di ricerca.</span>  <br>
+         <span class="g">&ltmeta name="keywords" content="parola1, parola2">:</span><span class="p">Parole chiave per la SEO.</span> <br> 
+         <span class="g">&ltmeta name="robots" content="index, follow">:</span><span class="p">Indica ai motori di ricerca come trattare la pagina.</span>  <br>
+         <span class="g">&lttitle>:</span>
+         <span class="p">Contiene il titolo della pagina, che appare sulla barra del titolo del browser o nelle schede della finestra.</span>  <br>
+        </p>
+        <p> 
+          Esempio: &lttitle>La mia Pagina Web&lt/title> <br>
+          &ltlink>: Questo tag viene utilizzato per collegare risorse esterne come fogli di stile (CSS), icone e font. <br>
+          &ltlink rel="stylesheet" href="stile.css">: Collega un foglio di stile CSS esterno. <br>
+          &ltlink rel="icon" href="icon.ico" type="image/x-icon">: Collega l'icona della pagina (favicon). <br>
+          &ltscript>: Questo tag include o fa riferimento a script JavaScript, che possono essere eseguiti in modo sincrono o asincrono. <br>
+          
+          &ltscript src="script.js">&lt/script>: Collega un file JavaScript esterno. <br>
+          &ltstyle>: Definisce gli stili CSS direttamente all'interno della pagina HTML. <br>
+          
+          Esempio: <br>
+          html <br>
+          &ltstyle> <br>
+            body { background-color: lightblue; } <br>
+            &lt/style> <br>
+          <span class="g">Tag Open Graph (&ltmeta property="og:...">):</span>
+          <span class="p">Questi tag fanno parte della cosiddetta Open Graph protocol</span>  ed è utilizzato per ottimizzare
+          come una pagina web viene visualizzata quando viene condivisa sui social media
+           (come Facebook, Twitter, LinkedIn, ecc.). <br>
+          
+          Il tag Open Graph (og:) <br>
+          <span class="p">I tag Open Graph sono meta tag che aiutano i social network a estrarre e visualizzare informazioni
+          in modo ottimale quando un URL viene condiviso. Sono particolarmente utili per definire cosa appare nei post
+          condivisi sui social media, come titolo, descrizione e immagine.</span> <br>
+          <span class="g">Alcuni dei tag Open Graph più comuni sono:</span> <br>
+          <span class="p">og:title: Definisce il titolo che verrà visualizzato sui social media quando la pagina viene condivisa.
+          </span> <br>
+          html <br>
+          esempio <br>
+          &ltmeta property="og:title" content="Il Titolo della Mia Pagina Web"> <br>
+          <span class="p">og:description:</span>Fornisce una breve descrizione della pagina che verrà mostrata nei post. <br>
+          esempio <br>
+          html <br>
+          &ltmeta property="og:description" content="Questa è una descrizione breve della mia pagina web."> <br>
+          <span class="p">og:image:</span> Specifica l'URL dell'immagine che verrà utilizzata come anteprima nella condivisione. <br>
+          esempio <br>
+          html <br>
+          &ltmeta property="og:image" content="https://example.com/immagine.jpg"> <br>
+          <span class="p">og:url:</span> Indica l'URL canonico della pagina, che i social media useranno per fare
+           riferimento alla pagina. <br>
+          esempio <br>
+          html <br>
+          &ltmeta property="og:url" content="https://example.com/pagina"> <br>
+          <span class="p">og:type:</span> Definisce il tipo di contenuto, come ad esempio "website", "article",
+           "video", ecc.
+          esempio <br> 
+          html <br>
+          &ltmeta property="og:type" content="website"> <br>
+          Esempio di una sezione &lthead> con tag Open Graph: <br>
+          html <br>
+          &lthead> <br>
+           &ltmeta charset="UTF-8"> <br>
+           &ltmeta name="description" content="Una pagina che spiega la sezione head di HTML."> <br>
+           &ltmeta name="keywords" content="HTML, head, meta tag, web design"> <br>
+           &ltmeta property="og:title" content="Come Usare la Sezione Head di HTML"> <br>
+           &ltmeta property="og:description" content="Scopri come configurare correttamente la sezione head in HTML per migliorare il SEO e la condivisione sui social media."> <br>
+           &ltmeta property="og:image" content="https://example.com/immagine.jpg"> <br>
+           &ltmeta property="og:url" content="https://example.com/pagina"> <br>
+           &ltmeta property="og:type" content="article"> <br>
+            title>Come Usare la Sezione Head di HTML&lt/title> <br>
+            &lt/head> <br>
+          Importanza dei tag Open Graph: <br>
+          <span class="p">I tag Open Graph sono particolarmente utili per ottimizzare l’aspetto e la presentazione di una pagina quando viene 
+          condivisa sui social media. Senza questi tag, i social potrebbero scegliere automaticamente titoli, descrizioni e immagini,
+           ma con gli Open Graph è possibile personalizzare l’aspetto e migliorare l’engagement</span>.
+      </p>
+      <p>
+        Gli elementi a livello di blocco vengono sempre disegnati su una nuova riga, mentre glie elementi in linea
+        possono influenzare sezioni di testo in qualsiasi punto all'interno della riga . <br>
+        Esempi in linea sono &ltspan&gt &ltem&gt &ltstrong&gt. <br>
+        Em era un elemento per scrivere in corsivo , strong per scrivere in grassetto, ora si usa sempre le classi e il css.
+        in css italic stà per corsivo e bold sta per grassetto.
+      </p>
+      <p>
+        Non tutti gli elementi vanno a capo alla sua chiusura, per farlo aggiungiamo l'elemento br o hr (hr spazia anche
+        con una linea orizzontale).
+      </p>
+      <p>
+        I collegamenti ipertestuali vengono fatti con l'elemento a 
+        <span class="y">L'elemento </a></span> in HTML è utilizzato per definire un collegamento ipertestuale 
+        (link) che può connettere una pagina web a un'altra pagina o risorsa (come un file, un'email, una sezione di una
+        stessa pagina, ecc.). <br>
+        <span class="g">La sintassi base dell'elemento &lta&gt è:</span> <br>
+        &lta href ="URL" &gt Testo del link /a
+        Attributi principali:
+        <span class="p">href</span>: È l'attributo più importante e specifica l'URL della risorsa a cui il link punta.
+         Ad esempio, un collegamento a un'altra pagina web o un file. <br>
+        <span class="p">target:</span> Determina come deve essere aperto il link. Ad esempio, l'attributo target="_blank"
+        apre il link in una nuova finestra o scheda del browser. <br>
+        <span class="p">title:</span> Fornisce un testo descrittivo che appare come un tooltip quando l'utente passa 
+        il mouse sopra il link.
+        <span class="p">rel: </span>Indica il tipo di relazione tra il documento che contiene il link e il documento
+         collegato. Un esempio comune è rel="noopener noreferrer" quando si usa target="_blank" per motivi di sicurezza.
+        <span class="p">download:</span> Se specificato, questo attributo indica che il link punta a un file che deve essere
+        scaricato anziché aperto nel browser.
+      </p>
+      <p>
+        <span class="y"><h3>spazi all'interno di castelle o file</h3></span>
+        per convenzione all'interno di un sito web utilizzo file e cartelle prive di spazi,questo vale anche per
+        css e javascript. <br>
+      </p>
+
+
+    </div>
+    <div class="bott-avaind">
+      <ul>
+        <li><a href="../index.html">pagina principale</a></li>
+        <li><a href="html1.html">successiva</a></li>
+        <li><a href="html3.html">precedente</a></li>
+      </ul>
+    </div>
+
+  </div>
+
+</body>
+</html>
