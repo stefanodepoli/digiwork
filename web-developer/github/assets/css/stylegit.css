@@ -1,0 +1,88 @@
+@media only screen and (min-width:1024px)
+
+{ 
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(141, 140, 140);
+    color: black;
+  }
+  
+  header h1 
+  {
+    text-align: center;
+    font-size: 80px;
+    padding: 40px 10px;
+  }
+  .menu-index
+  {
+   padding: 30px 30px;
+  }
+  .box-comandi
+  {
+    padding-left: 20px;
+  }
+  .bott-avaind
+  {
+   padding: 50px 30px;
+   list-style-type: none;
+
+  }
+  .bott-avaind a
+  {
+    text-decoration: none;
+    background-color: rgb(12, 70, 23);
+    color: white;
+    padding: 8px 10px;
+    border: 2px solid black;
+    border-radius: 6px;
+  }
+
+   .index header h1
+  {
+   text-align: center;
+   font-size: 40px;
+  }
+  .vsc1 h1
+  {
+    padding-top: 30px;
+  }
+  .vsc1  h4 
+  {
+    background-color: rgb(241, 241, 98);
+  }
+  .vsc1 p
+  {
+    background-color: rgb(86, 219, 86);
+  }
+  /* span .evi */
+  .y
+  {
+   background-color: rgb(241, 241, 98);
+  }
+  .g
+  {
+    background-color: rgb(86, 219, 86);
+  }
+  .p
+  {
+    background-color: rgb(236, 90, 212);
+  }
+
+  P 
+  {
+   padding: 15px 20px;
+   font-size: 20px;
+  }
+  .pio 
+  {margin-left: 30px;
+   padding: 20px 20px;
+   font-size: 20px;
+  }
+  .html1 li
+  {margin-left: 30px;
+   padding: 12px 20px;
+   font-size: 20px;
+  }
+}
