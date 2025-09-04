@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>appunti-graphichdesigner</title>
+    <link rel="stylesheet" href="../assets/css/file-css.css" />
+    <link rel="stylesheet" href="assets/css/css_ccna.css" />
+    <link rel="stylesheet" href="../assets/css/css_evidenzia.css" />
+  </head>
+  <body>
+    <div class="graphic-designer">
+      <h1>corso networking (ccna)</h1>
+      <div class="bott-avaind">
+        <ul>
+          <li><a href="../index.html">home</a></li>
+          <li><a href="pagina1.html">next page</a></li>
+        </ul>
+      </div>
+      <main>
+        <div >
+          <strong>Introduction to Networking and Connection Types</strong> . Il
+          corso è incentrato sulla certificazione Cisco 200-301. <br> 
+          <strong>1. Cos'è una Rete di Telecomunicazione?</strong> Immagina di essere a casa e di
+          voler connettere il tuo PC a Internet,stai usando una rete di
+          telecomunicazione, o networking. <br> Esistono principalmente due modi per
+          connettersi a Internet dalla tua abitazione:
+          <ul>
+            <li>• Connessione via cavo:
+          Utilizza un modem che si collega a un cavo coassiale. Il cavo
+          coassiale era comune in passato per le televisioni a tubo catodico. Il
+          modem, a sua volta, si connetterà via cavo a un router, e il router a
+          Internet.</li>
+            <li>• Connessione wireless (senza cavo): Questa è la Wi-Fi (o
+          Wireless LAN). Ti permette di connettere dispositivi come tablet,
+          portatili o smartphone senza cavi. Anche in questo caso, il
+          dispositivo wireless si connette a un router (che funge anche da
+          access point), il quale poi si collega via cavo a Internet.</li>
+          </ul>   
+          I dispositivi che si connettono alla rete, come computer, tablet,
+          notebook, smartphone, sono chiamati device. <br> 
+          <strong> La Rete in un Contesto aziendale (Piccole Imprese)
+          </strong>. Anche una piccola o media impresa, che non
+          può permettersi una complessa infrastruttura di rete con molti
+          dispositivi e tecnici dedicati, ha bisogno di connettività. Spesso
+          queste imprese utilizzano una soluzione chiamata <strong>Small Office/Home
+          Office (SOHO)</strong> , molto simile alla connessione domestica. <br> In un ambiente
+          SOHO o aziendale, i dispositivi possono connettersi:
+          <ul>
+            <li>• Via cavo: Un PC
+          desktop può connettersi a uno switch tramite un cavo Ethernet.</li>
+            <li>• Via
+          wireless: Un portatile o uno smartphone può connettersi a un access
+          point senza fili.</li>
+          </ul> 
+          Sia lo switch (per le connessioni via cavo) che
+          l'access point (per le connessioni wireless) si connettono a una <em>rete
+          LAN (Local Area Network)</em>. Una LAN è una rete locale, ad esempio
+          all'interno di un ufficio o di casa. Quando comunichiamo con reti
+          esterne alla nostra LAN, come Internet, utilizziamo una <em>WAN (Wide Area
+          Network)</em>. <br>
+           <strong>3. Il Modello TCP/IP: Il "Blueprint"</strong> della Rete Il modello
+          TCP/IP è fondamentale per capire come i dispositivi comunicano in
+          rete. <br> Puoi chiamarlo anche <strong>modello di networking, architettura di
+          networking o blueprint di networking</strong>. Il termine "blueprint"
+          (progetto) è utile perché, proprio come il progetto di una casa
+          definisce la sua struttura e i suoi impianti (elettrici, idraulici),
+          il modello TCP/IP definisce la struttura e le regole con cui i
+          dispositivi (router, switch, computer) comunicano in una rete. <br>
+          Storia del TCP/IP: • Internet, come la conosciamo oggi, è nata intorno agli
+          anni '80. <br> Prima del TCP/IP, molte grandi aziende usavano i propri
+          modelli proprietari (come SNA di IBM), che non permettevano la
+          comunicazione tra dispositivi di aziende diverse. <br>Negli anni '90, è
+          stato creato il modello TCP/IP, un modello libero e aperto,
+          accessibile a tutti. <br> Il TCP/IP è nato dopo il modello OSI (Open
+          Systems Interconnection), che aveva l'obiettivo nobile di
+          standardizzare tutti i protocolli di rete. <br> Il TCP/IP è una
+          semplificazione del lavoro di OSI e oggi è il modello di
+          telecomunicazione più utilizzato al mondo. È stato sviluppato in gran
+          parte da volontari. <br> <strong>4. I Livelli del Modello TCP/IP Il modello TCP/IP
+          è composto da cinque livelli (layer)</strong> .  <br> Ogni livello ha funzioni
+          specifiche e utilizza diversi protocolli (regole di comunicazione). I
+          cinque livelli sono (dal più alto al più basso): 
+          <ul>
+            <li>• Application Layer
+          (Livello di Applicazione): ◦ Questo è il livello più elevato, quello
+          con cui le applicazioni interagiscono direttamente. <br> ◦ Contiene
+          protocolli come HTTP (Hypertext Transfer Protocol), HTTPS, POP3, SMTP,
+          FTP. ◦ HTTP è il protocollo usato per richiedere e visualizzare pagine
+          web. È stato creato da Tim Berners-Lee nei primi anni '90, permettendo
+          non solo lo scambio di dati ma anche la visualizzazione di testo,
+          immagini e altro. ◦ Quando visiti un sito web, il tuo web browser (ad
+          esempio Chrome) invia una richiesta HTTP a un web server. Il server
+          risponde inviando le pagine HTML richieste</li>
+            <li>• Transport Layer (Livello
+          di Trasporto): ◦ Questo livello gestisce la trasmissione dei dati da
+          un computer all'altro. ◦ Ha due protocolli principali: ▪ TCP
+          (Transmission Control Protocol): Fornisce un controllo degli errori.
+          Se invii dati tramite TCP (ad esempio, una email), e ci sono errori o
+          il dato non arriva, il protocollo riprova l'invio finché non è certo
+          che il dato sia stato consegnato correttamente e senza errori. I dati
+          vengono divisi in pacchetti più piccoli, chiamati segmenti.▪ UDP
+          (User Datagram Protocol): Non effettua controlli degli errori. Invia
+          il dato così com'è, senza preoccuparsi se arriva o meno. Viene
+          utilizzato in situazioni dove una piccola perdita di dati non è
+          critica e la velocità è più importante (es. streaming video su
+          YouTube, chiamate WhatsApp).</li>
+          <li>◦ Interazioni tra livelli:▪ Adjacent
+          Layer Interaction: Avviene all'interno dello stesso computer. Un
+          livello superiore (es. HTTP) richiede un servizio a un livello
+          inferiore (es. TCP) per inviare dati. ▪ Same Layer Interaction:
+          Avviene tra due computer diversi. I computer comunicano usando lo
+          stesso protocollo allo stesso livello (es. due computer usano entrambi
+          HTTP o TCP per la loro comunicazione)</li>
+          <li>• Network Layer (Livello di
+          Rete): ◦ Questo livello è responsabile dell'indirizzamento e del
+          routing dei dati. ◦ Il protocollo più importante qui è l'IP (Internet
+          Protocol). ◦ Indirizzo IP: Ogni dispositivo in rete ha un indirizzo IP
+          univoco (come un codice postale o un indirizzo di casa) che lo
+          identifica. Esistono indirizzi IPv4 e IPv6. Questi indirizzi, per noi
+          umani, sono rappresentati in "dot-decimal notation" (es. 3.3.3.3), ma
+          per i dispositivi sono numeri binari. ◦ Routing (Instradamento): È il
+          percorso che i dati compiono per andare da un indirizzo IP di origine
+          a un indirizzo IP di destinazione. Immagina il servizio postale:
+          quando spedisci una lettera, scrivi l'indirizzo di destinazione e il
+          servizio postale la smista attraverso vari uffici postali. In una
+          rete, i router sono come gli uffici postali: ricevono i dati e
+          decidono il percorso migliore per farli arrivare a destinazione. ◦ Se
+          il destinatario è nella tua stessa rete locale (LAN), i dati non
+          usciranno dal tuo router. Se è in una rete esterna (WAN, es.
+          Internet), i dati dovranno attraversare diversi router per raggiungere
+          la destinazione. • Data Link Layer (Livello di Collegamento Dati): ◦
+          Questo livello gestisce la comunicazione tra dispositivi collegati
+          direttamente, come un computer e un router. ◦ Contiene protocolli come
+          Ethernet (per connessioni via cavo) e 802.11 (per il Wi-Fi). •</li>
+            <li>Physical Layer (Livello Fisico): ◦ Questo è il livello più basso e
+          riguarda i componenti fisici della rete. ◦ Include le schede di rete,
+          i cavi di rete, gli switch e i router. ◦ È qui che i dati digitali
+          (bit) vengono trasformati in segnali elettrici o luminosi per essere
+          trasmessi attraverso i cavi. 5. L'Incapsulamento dei Dati Quando i
+          dati viaggiano attraverso i livelli del modello TCP/IP, subiscono un
+          processo chiamato incapsulamento. Questo significa che ogni livello
+          aggiunge la propria intestazione (header) ai dati che riceve dal
+          livello superiore. Solo il Data Link Layer aggiunge anche una parte
+          finale (trailer). Ecco come vengono chiamati i dati incapsulati a ogni
+          livello: • Segment: I dati incapsulati dal Transport Layer (es. dal
+          TCP). • Packet: I dati incapsulati dal Network Layer (es. dall'IP). •
+          Frame: I dati incapsulati dal Data Link Layer, che include sia un
+          header che un trailer. Il processo di trasmissione è quindi:1. Il tuo
+          computer (Pippo) incapsula i dati (ad esempio, un pacchetto IP)
+          aggiungendo un header e un trailer Ethernet, creando un Ethernet
+          Frame. 2. La scheda di rete del tuo computer trasmette fisicamente
+          questo Ethernet Frame attraverso il cavo di rete come elettricità. 3.
+          Il router riceve fisicamente l'Ethernet Frame attraverso la sua scheda
+          di rete, che trasforma l'elettricità in bit e ricostruisce il frame.
+          4. Il router, a sua volta, decapsula il frame, rimuovendo l'header e
+          il trailer Ethernet per recuperare il pacchetto IP originale. Questo è
+          solo l'inizio del tuo percorso nel mondo del networking! Questi
+          concetti fondamentali ti aiuteranno a comprendere le complessità
+          future.</li>
+           
+        </div>
+      </main>
+      <div class="bott-avaind">
+        <ul>
+          <li><a href="../index.html">home</a></li>
+          <li><a href="pagina1.html">next page</a></li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>
