@@ -1,0 +1,95 @@
+
+*{  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-color: rgb(141, 140, 140);
+  color: black;
+}
+/*vertical mobile*/
+@media only screen and (max-width: 480px)
+{
+    h1
+  {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+  }
+  /*formattazione pulsanti avanti indietro*/
+  .bott-avaind
+  {
+    padding:10px 0px 10px 25px;
+  }
+  /*formattazione testo ed elenchi, un solo div nella pagina*/
+  div,ul
+  {
+    padding: 10px 10px;
+    font-size: large;
+  }
+
+}
+ /*orizzontal mobile*/
+@media only screen and (min-width: 481px) and (max-width:800px)
+{
+    h1
+  {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+  }
+  /*formattazione pulsanti avanti indietro*/
+  .bott-avaind
+  {
+    padding:10px 0px 10px 25px;
+  }
+   /*formattazione testo ed elenchi, un solo div nella pagina*/
+  div,ul
+  {
+    padding: 10px 10px;
+    font-size: large;
+  }
+
+ }
+ /*tablet*/
+@media only screen and (min-width: 768px) and (max-width:1023px)
+{
+    h1
+  {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+  }
+  /*formattazione pulsanti avanti indietro*/
+  .bott-avaind
+  {
+    padding:10px 0px 10px 25px;
+  }
+  /*formattazione testo ed elenchi, un solo div nella pagina*/
+  div,ul
+  {
+    padding: 10px 10px;
+    font-size: large;
+  }
+
+}
+ /*desktop*/
+@media only screen and (min-width:1024px)
+{
+  h1
+  {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+  }
+   /*formattazione pulsanti avanti indietro*/
+  .bott-avaind
+  {
+    padding:10px 0px 10px 25px;
+  }
+  /*formattazione testo ed elenchi, un solo div nella pagina*/
+  div,ul
+  {
+    padding: 10px 10px;
+    font-size: large;
+  }
+
+}

@@ -3,11 +3,7 @@
 /*vertical mobile*/
 @media only screen and (max-width: 480px)
 {
-   .g
- {
-  background-color: rgb(121, 242, 184);
- }
- .pi
+ span
  {
     background-color: rgb(227, 123, 209);
  }
@@ -16,11 +12,7 @@
  /*orizzontal mobile*/
 @media only screen and (min-width: 481px) and (max-width:800px)
 {
-   .g
- {
-  background-color: rgb(121, 242, 184);
- }
- .pi
+ span
  {
     background-color: rgb(227, 123, 209);
  }
@@ -29,11 +21,7 @@
  /*tablet*/
 @media only screen and (min-width: 768px) and (max-width:1023px)
 {
-   .g
- {
-  background-color: rgb(121, 242, 184);
- }
- .pi
+ span
  {
     background-color: rgb(227, 123, 209);
  }
@@ -42,11 +30,7 @@
  /*desktop*/
 @media only screen and (min-width:1024px)
 {
- .g
- {
-  background-color: rgb(121, 242, 184);
- }
- .pi
+ span
  {
     background-color: rgb(227, 123, 209);
  }

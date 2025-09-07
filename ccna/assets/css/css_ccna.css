@@ -8,31 +8,87 @@
 /*vertical mobile*/
 @media only screen and (max-width: 480px)
 {
+    h1
+  {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+  }
+  /*formattazione pulsanti avanti indietro*/
+  .bott-avaind
+  {
+    padding:10px 0px 10px 25px;
+  }
+  /*formattazione testo ed elenchi, un solo div nella pagina*/
+  div,ul
+  {
+    padding: 10px 10px;
+    font-size: large;
+  }
+
 }
  /*orizzontal mobile*/
 @media only screen and (min-width: 481px) and (max-width:800px)
 {
+    h1
+  {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+  }
+  /*formattazione pulsanti avanti indietro*/
+  .bott-avaind
+  {
+    padding:10px 0px 10px 25px;
+  }
+   /*formattazione testo ed elenchi, un solo div nella pagina*/
+  div,ul
+  {
+    padding: 10px 10px;
+    font-size: large;
+  }
+
  }
  /*tablet*/
 @media only screen and (min-width: 768px) and (max-width:1023px)
 {
+    h1
+  {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+  }
+  /*formattazione pulsanti avanti indietro*/
+  .bott-avaind
+  {
+    padding:10px 0px 10px 25px;
+  }
+  /*formattazione testo ed elenchi, un solo div nella pagina*/
+  div,ul
+  {
+    padding: 10px 10px;
+    font-size: large;
+  }
+
 }
  /*desktop*/
 @media only screen and (min-width:1024px)
 {
   h1
   {
-    padding-top: 25px;
-    padding-bottom: 25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     text-align: center;
   }
+   /*formattazione pulsanti avanti indietro*/
   .bott-avaind
   {
-    padding:25px 0px 45px 45px;
+    padding:10px 0px 10px 25px;
   }
+  /*formattazione testo ed elenchi, un solo div nella pagina*/
   div,ul
   {
-    padding: 30px 30px;
+    padding: 10px 10px;
     font-size: large;
   }
 

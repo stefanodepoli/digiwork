@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Digiwoek/css</title>
+  <link rel="stylesheet" href="../assets/css/stylewd.css">
+  <link rel="stylesheet" href="assets/csscss.css">
+</head>
+<body>
+  <h1>il css cascading style sheets</h1>
+        <div class="bott-avaind">
+        <ul>
+          <li><a href="../index.html">home</a></li>
+          <li><a href="pagina1.html">next page</a></li>
+        </ul>
+      </div>
+      <div class="contenuto-css">
+  <p><strong>1. Cos'è il CSS?</strong><br>
+  CSS (Cascading Style Sheets) serve a dare stile a una pagina HTML. Senza CSS, una pagina HTML sarebbe una "tristissima pagina bianca" con un font uniforme, senza colori o altre personalizzazioni. CSS permette di trasformare una pagina HTML base in qualcosa di più accattivante, aggiungendo colori, modificando font, e disponendo elementi come bottoni.</p>
+
+  <p><strong>2. Come inserire CSS in HTML</strong><br>
+  Esistono tre modi principali per inserire CSS in un documento HTML:<br>
+  • File esterno: È il metodo più comune e consigliato per progetti di una certa dimensione. Si crea un file .css separato (es. style.css) e lo si collega all'HTML usando il tag <code>&lt;link rel="stylesheet" href="style.css"&gt;</code>. Questo permette di riutilizzare lo stesso stile su più pagine, rendendo la gestione e le modifiche molto più efficienti.<br>
+  • CSS interno: Si scrivono le regole CSS direttamente all'interno del tag <code>&lt;style&gt;</code> nella sezione <code>&lt;head&gt;</code> del documento HTML.<br>
+  • CSS in linea (inline): Si applicano le regole CSS direttamente a un singolo elemento HTML utilizzando l'attributo <code>style</code>. Ad esempio: <code>&lt;p style="color: red;"&gt;Testo rosso&lt;/p&gt;</code>.
+  </p>
+
+  <p><strong>3. Come funziona nella pratica</strong><br>
+  Quando si carica una pagina web, il browser segue questi passaggi:<br>
+  1. Viene caricato e letto l'HTML.<br>
+  2. Viene caricato e letto il CSS.<br>
+  3. Viene creato il DOM (Document Object Model).<br>
+  4. Il CSS viene applicato agli elementi del DOM.<br>
+  5. La pagina viene mostrata all'utente con lo stile applicato.
+  </p>
+
+  <p><strong>4. Il DOM (Document Object Model)</strong><br>
+  Il DOM è una rappresentazione ad oggetti del documento HTML. Trasforma gli elementi HTML (come <code>&lt;html&gt;</code>, <code>&lt;body&gt;</code>, <code>&lt;h1&gt;</code>, <code>&lt;p&gt;</code>) in una struttura ad albero di nodi.<br>
+  • Parent/Child: <code>&lt;html&gt;</code> è padre di <code>&lt;head&gt;</code> e <code>&lt;body&gt;</code>.<br>
+  • Sibling: <code>&lt;head&gt;</code> e <code>&lt;body&gt;</code> sono fratelli.
+  </p>
+
+  <p><strong>5. Prime regole CSS</strong><br>
+  Una regola CSS base viene applicata a un selettore e definisce una o più proprietà con valori.<br>
+  Esempio:<br>
+  <code>
+  h1 {<br>
+    &nbsp;&nbsp;background-color: aqua;<br>
+    &nbsp;&nbsp;border: solid 1px black;<br>
+    &nbsp;&nbsp;padding: 20px;<br>
+  }
+  </code><br>
+  Se una proprietà è scritta male (es. <code>font color</code> invece di <code>color</code>), il browser la ignora senza errori.
+  </p>
+
+  <p><strong>6. CSS e browser</strong><br>
+  Ogni browser supporta le proprietà CSS in modo diverso. Per controllare la compatibilità si usa <a href="https://caniuse.com" target="_blank">caniuse.com</a>.
+  </p>
+
+  <p><strong>7. La Sintassi</strong><br>
+  Una regola CSS è composta da:<br>
+  • Selettore<br>
+  • Parentesi graffe { }<br>
+  • Dichiarazioni proprietà: valore;<br>
+  </p>
+
+  <p><strong>8. Selettore e regole</strong><br>
+  Tipi principali:<br>
+  • Selettore di elemento: <code>h1</code><br>
+  • Selettore di classe: <code>.miaClasse</code><br>
+  • Selettore di ID: <code>#mioId</code>
+  </p>
+
+  <p><strong>9. Proprietà e Valore</strong><br>
+  Proprietà = cosa cambiare (es. <code>background-color</code>)<br>
+  Valore = come cambiarlo (es. <code>aqua</code>)
+  </p>
+
+  <p><strong>10. Cascata</strong><br>
+  Se due regole si applicano alla stessa proprietà, vince l’ultima scritta. Es:<br>
+  <code>
+  h1 { color: blue; }<br>
+  h1 { color: red; }
+  </code><br>
+  Risultato: il testo sarà rosso.
+  </p>
+
+  <p><strong>11. Specificità</strong><br>
+  Ogni selettore ha un punteggio:<br>
+  • Elemento: 1<br>
+  • Classe: 10<br>
+  • ID: 100<br>
+  • Inline style: 1000<br>
+  Regole con punteggio maggiore vincono. <code>!important</code> forza la priorità, ma va usato poco.
+  </p>
+
+  <p><strong>12. Ereditarietà</strong><br>
+  Alcune proprietà si ereditano dai genitori (es. <code>color</code>).<br>
+  • inherit → eredita<br>
+  • initial → valore di default<br>
+  • unset → comportamento naturale
+  </p>
+
+  <p><strong>13. Resettare i valori</strong><br>
+  Con <code>all: unset;</code> si resettano tutte le proprietà di un elemento.
+  </p>
+  <audio src="assets/audio/CSS1.m4a" controls>
+  Il tuo browser non supporta l'elemento audio.
+</audio>
+
+</div>
+      <div class="bott-avaind">
+        <ul>
+          <li><a href="../index.html">home</a></li>
+          <li><a href="pagina1.html">next page</a></li>
+        </ul>
+      </div>
+
+</body>
+</html>
