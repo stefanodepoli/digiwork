@@ -1,113 +1,330 @@
 <!DOCTYPE html>
-<html lang="it">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Digiwork/ai&promptengeneering</title>
-  <link rel="stylesheet" href="assets/css/styleai.css">
-</head>
-<body>
-  <header>
-      <h1>AI E PROMPT ENGINEERING</h1>
-  </header>
-    <h3>che cos'è <span class="y">l'intelligenza artificiale? </span></h3>
-  <p>
-    <span class="grass">L'intellingenza artificiale è un campo dell'informatica che si occupa di sviluppare sistemi in grado di eseguire
-    compiti tipicamente associati all'intelligenza umana,come apprendere,ragionare,risolvere problemi e prendere
-    decisioni.</span> <br>
-    l'obbiettivo dell'intelligenza artificiale non solamente automatizzare processi,ma sviluppare modelli in grado
-    di apprendere dall'esperienza,adattarsi ai contesti e migliorare nel tempo le risposte. <br>
-  </p>
-    <h3>ai tradizionale e ai generativa</h3>
-  <p>  
-    esistono diverte tipologie di ai. <br>
-    l'intelligenza artificiale tradizionale si basa su regole stabilite in anticipo e su tecniche di analisi 
-    predittiva,cioè l'uso di dati storici per prevedere eventi futuri. <br>
-    Questi sistemi sono progettati per svolgere compiti specifici,utilizzando sia dati strutturati (tabelle)
-    che non strutturati (immagini) attraverso algoritmi scritti e controllati dall'essere umano.  <br>
-    Un esempio può essere un motore di ricerca che ordina i siti internet in base alle parole chiave. <br>
-    Questi sistemi però non sono in gradi di creare contenuti originali ne di adattarsi autonomamente a compiti 
-    nuovi o diversi da quelli per cui sono progettati.
-  </p>
-  <p>
-    l'intelligenza aritificiale generativa segna un'evoluzione importante rispetto a quella tradizionale,non si 
-    limita ad analizzare dati esistenti ma è capace di creare nuovi contenuti in modo autonomo. <br>
-    Grazie all'uso di modelli neurali(come il large language model),questa tecnologia può generare testi ,
-    immagini , musica codice e video imitantod in parte il processo creativo umano.   
-  </p>
-  <p>
-    per capire meglio l'intelligenza generativa dividiamo l'intelligenza artificiale in 4 insiemi rispettivamente
-     uno sottinsieme dell'altro. <br>
-    <span class="g">l'insieme intelligenza artificiale,contenuta nell'insieme deep learning, contenuta nell'insieme
-    machine learning, centenuta nell'insieme aritficial learning </span>
-  </p>
-  <h3>cos'è il machine learning</h3>
-  <p>
-   <span class="grass">Il machine learning o apprendimento automatico, è una cranca dell'intelligenza artificiale 
-   che consente ai computer di imparare dai dati senza essere esplicitamente programmati per ogni compito </span> <br>
-   Per esempio un modello di machine learning può essere addestrato a riconoscere le email spam, analizzando milioni
-    di messaggi, attraverso parole chiave e atteggiamenti degli utenti l'intelligenza artificiale riconosce con 
-    sempre più precisione una mail spam.
-    esistono diverse tipologie di machine learning :
-    <ul>
-      <li><span class="g">supervised learning (apprendimento supervisionato):</span> l'intelligenza artificiale viene addestrata con 
-        dati di esmepio</li>
-      <li><span class="g">unsupervised learning(apprendimento non supervisionato):</span> l'intelligenza artificiale analizza dati senza 
-        sapere in anticipo quali siano le risposte giuste,il suo compito è trovare collegamenti,come quando un'app 
-        suggerisce nuove canzoni basandosi sui gusti delle canzoni che hai già ascoltato</li>
-      <li><span class="g">reinforcement learning : (apprendimento per rinforzo)</span> l'ai impara attraverso tentativi ed errori ricevendo
-        premi quando fa scelte corrette e penalità quando fa scelte sbagliate.
-      </li>
-    </ul> 
-  </p>
-  <h3>cos'è il deep learning?</h3>
-  <p>
-    <span class="grass">il deep learning è una branca acanzata del machine learning che utilizza reti neurali artificiali
-    ispirate alla struttura del cervello umano</span> . <br>
-    Queste reti sono composte da più strati di neuroni artificiali (deep=profondo) che elaborano dati in modo 
-    progressivo. <br>
-    <span class="grass">Grazie al deep learning i modelli di ai generativa vanno oltre la semplice classificazione
-    o previsione,sono in grado di <span class="p">apprendere dalle informazioni che ricevono e di generare 
-    output completamente nuovi, cioè risultati originali mai visti prima.  
-    </span>  
-    </span>
-    E' proprio questo che rende possibili strumenti come chatgpt, gemini o claude, capaci di scrivere articoli,o 
-    sostenere conversazioni in modo naturale,possiamo avere DALL-e o Midjorney che creano immagini da una semplice
-     descrizione o Sora e Runway che generano video a partire da input forniti dall'utente. <br>
-  </p>  
-  <div>
-    <table>
-      <tr>
-          <th>Caratteristica</th>
-          <th>ai tradizionale</th>
-          <th>ai generativa</th>
-
-      </tr>
-      <tr>
-          <td>approccio</td>
-          <td>basato su regole e analisi predittiva</td>
-          <td>basato su modelli di deep learning</td>
-
-      </tr>
-      <tr>
-          <td>output</td>
-          <td>segue schemi predefiniti per prendere decisioni,classificare dati e fare previsioni,senza creare
-            contenuti nuovi
-          </td>
-          <td>crea contenuti nuovi e originali,adattandosi ai diversi contesti<td>
-
-      </tr>
-      <tr>
-          <td>esempi di utilizzo</td>
-          <td>riconoscimento facciale, motori di ricerca, automazione industriale</td>
-          <td>chatbot avanzati,generazione di immagini, assistenti alla scrittura</td>
-      </tr>
-      <tr>
-          <td>adattabilità</td>
-          <td>limitata a compiti specifici poichè segue regole fisse</td>
-          <td>generare risposte nuove in base ai dati ricevuti</td>
-      </tr>
-  </table>
-  </div>
-</body>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>digiwork/ia</title>
+    <link rel="stylesheet" href="../assets/css/file-css.css" />
+    <link rel="stylesheet" href="assets/css/aicss.css">
+    <link rel="stylesheet" href="../assets/css/css_evidenzia.css" />
+  </head>
+  <body>
+    <div >
+      <h1>corso networking (ccna)</h1>
+      <div class="bott-avaind">
+        <ul>
+          <li><a href="../index.html">home</a></li>
+          <li><a href="ia2.html">next page</a></li>
+        </ul>
+      </div>
+    1. Storia e Vari Tipi di Intelligenza Artificiale (AI) L'intelligenza
+    artificiale (AI) non è più un concetto futuristico, ma una realtà
+    consolidata che sta trasformando il nostro modo di lavorare, apprendere e
+    interagire. È un campo dell'informatica che sviluppa sistemi capaci di
+    eseguire compiti tipicamente associati all'intelligenza umana, come
+    apprendere, ragionare, risolvere problemi e prendere decisioni, con
+    l'obiettivo di migliorare continuamente le proprie risposte. Evoluzione
+    Storica dell'AI: • Anni '40 e '50 - Le Origini: ◦ 1936: Alan Turing
+    introduce la macchina universale, ponendo le basi per i computer moderni. ◦
+    1950: Alan Turing propone il test di Turing per determinare l'intelligenza
+    di una macchina. ◦ 1951: Christopher Strachey scrive il primo programma AI
+    per giocare a dama. ◦ 1956: John McCarthy conia ufficialmente il termine
+    "intelligenza artificiale" al Dartmouth College. • Anni '60 e '70 - Primi
+    Successi e Difficoltà: ◦ Sviluppo dei primi sistemi esperti che simulano il
+    ragionamento umano. ◦ Tentativi con reti neurali artificiali, limitati dalla
+    scarsa potenza di calcolo e dati. ◦ Fine anni '70: Inizio del primo "AI
+    winter" a causa delle aspettative troppo alte. • Anni '80 e '90 - La
+    Rinascita grazie al Machine Learning: ◦ Anni '80: I sistemi esperti trovano
+    successo in settori come industria e medicina. ◦ Anni '90: Introduzione
+    delle tecniche di machine learning, permettendo ai computer di "apprendere"
+    dai dati. ◦ 1997: Deep Blue di IBM sconfigge Garry Kasparov a scacchi,
+    dimostrando la capacità dell'AI di affrontare problemi complessi. • Anni
+    2000-2010 - Big Data e AI su Larga Scala: ◦ 2006: La rivoluzione del deep
+    learning porta a risultati superiori rispetto alle tecniche tradizionali. ◦
+    2011: Siri di Apple introduce l'AI al grande pubblico tramite gli assistenti
+    vocali. ◦ 2012: AlexNet rivoluziona il riconoscimento delle immagini,
+    segnando l'avvio dell'AI moderna. • Dal 2015 a Oggi - L'AI Generativa: ◦
+    2017: L'architettura Transformer di Google rivoluziona la comprensione del
+    linguaggio naturale. ◦ 2020: OpenAI lancia GPT-3, rendendo l'AI generativa
+    accessibile. ◦ 2022: Strumenti come DALL·E e Midjourney permettono di creare
+    immagini originali da descrizioni testuali. ◦ 2023-2024: L'AI generativa si
+    integra nel mondo del lavoro, trasformando concretamente processi e
+    decisioni. ◦ Nei prossimi anni si prevedono modelli più avanzati e AI
+    multimodali (che combinano testo, immagini, video, audio). Tipi di
+    Intelligenza Artificiale: Esistono due macro-categorie principali di AI: •
+    AI Tradizionale: Si basa su regole predefinite e analisi predittiva (usa
+    dati storici per previsioni). È progettata per compiti specifici e non
+    genera contenuti originali, come motori di ricerca o software antifrode. •
+    AI Generativa: Rappresenta un'evoluzione, capace di creare nuovi contenuti
+    (testi, immagini, musica, codice, video) in modo autonomo, imitando il
+    processo creativo umano. Si basa sull'uso di modelli avanzati di reti
+    neurali. Concetti Fondamentali: • Machine Learning (ML): Branca dell'AI che
+    consente ai computer di imparare dai dati senza programmazione esplicita. I
+    modelli ML analizzano grandi quantità di dati per riconoscere schemi e
+    migliorare le prestazioni. Include: ◦ Supervised learning: Addestramento con
+    dati in cui input e output corretti sono già noti. ◦ Unsupervised learning:
+    L'AI trova collegamenti e schemi nascosti in dati senza risposte
+    predefinite. ◦ Reinforcement learning: L'AI impara per tentativi ed errori,
+    ricevendo premi per scelte corrette. • Deep Learning: Branca avanzata del ML
+    che utilizza reti neurali artificiali ispirate al cervello umano, con più
+    strati di neuroni per elaborare dati in modo progressivo e riconoscere
+    pattern complessi. Grazie al deep learning, l'AI generativa può produrre
+    output completamente nuovi. • Large Language Models (LLMs): Modelli di
+    intelligenza artificiale addestrati su enormi quantità di testo per
+    comprendere e generare linguaggio naturale in modo coerente. Prevedono la
+    parola successiva in una frase, permettendo di scrivere, rispondere,
+    tradurre e conversare. Utilizzano l'architettura Transformer. ◦
+    Funzionamento degli LLMs: Raccolta dati (miliardi di parole da libri, web),
+    addestramento tramite deep learning (analizzano contesto, relazioni tra
+    parole, generano risposte coerenti), fine-tuning (ottimizzazione con dati
+    specifici e feedback umano). ◦ Importanza per l'AI generativa: Permettono di
+    creare contenuti testuali di alta qualità. Applicazioni includono assistenza
+    alla scrittura, supporto alla programmazione, chatbot avanzati, ricerca e
+    sintesi di informazioni, apprendimento e formazione. ◦ Limiti degli LLMs:
+    Possono generare informazioni errate ("allucinazioni"), riprodurre bias dai
+    dati di addestramento o produrre risposte generiche. Vantaggi dell'AI: L'AI
+    offre benefici concreti in termini di: • Automazione di compiti ripetitivi:
+    Libera tempo per attività più creative e strategiche (es. gestione
+    documenti, elaborazione dati in tempo reale, selezione del personale). •
+    Aumento della produttività e ottimizzazione del tempo: Velocizza attività
+    quotidiane (es. supporto alla scrittura, sintesi di riunioni, project
+    management). • Innovazione e nuove opportunità: Apre nuove possibilità in
+    ambito creativo, scientifico e tecnologico (es. scoperta di farmaci,
+    progettazione di materiali, arte generativa). Rischi dell'AI: L'AI solleva
+    importanti questioni etiche e legali, tra cui: • Disinformazione e fake
+    news: Capacità di creare contenuti altamente realistici (deepfake, notizie
+    false) rendendo difficile distinguere il vero dal falso. • Violazione della
+    privacy e uso improprio dei dati: Raccolta dati senza consenso, sorveglianza
+    di massa, profilazione degli utenti. Casi studio includono
+    Facebook-Cambridge Analytica e violazioni di OpenAI. • Impatto ambientale:
+    Enorme consumo energetico e idrico per addestramento e utilizzo dei modelli
+    AI, contribuendo alle emissioni di CO₂. • Bias nei modelli AI e
+    discriminazione: I modelli possono riprodurre e amplificare bias presenti
+    nei dati di addestramento (es. bias di genere, razziale, nelle assunzioni),
+    portando a risultati distorti o ingiusti. Uso Responsabile dell'AI: È
+    fondamentale promuovere un uso responsabile, trasparente ed etico dell'AI. •
+    Per le persone: Verificare sempre le fonti dei contenuti generati dall'AI,
+    proteggere i propri dati personali. • Per le aziende: Garantire la
+    supervisione umana nei processi critici, adottare un approccio etico nello
+    sviluppo dell'AI, assicurando trasparenza, spiegabilità e assenza di bias.
+    Include documentare i dataset, spiegare il funzionamento delle decisioni
+    dell'AI (Explainable AI - XAI), consentire verifiche esterne. È cruciale
+    diversificare i dataset, testare su gruppi demografici differenti e
+    applicare tecniche di "debiasing" per ridurre le disuguaglianze. Applicare
+    il principio di minimizzazione dei dati, usare tecniche di anonimizzazione e
+    offrire agli utenti il controllo sui propri dati sono fondamentali per la
+    privacy. Stabilire chiare responsabilità e meccanismi di reclamo,
+    promuovendo una cultura etica nei team di sviluppo, è essenziale. Proteggere
+    i modelli AI dagli attacchi (es. adversarial training) e monitorare
+    continuamente la sicurezza sono misure chiave. Strumenti AI Generali (basati
+    su LLMs): • ChatGPT (OpenAI): Un chatbot avanzato per dialogare, rispondere
+    a domande, riassumere, assistere nella scrittura, tradurre, generare idee e
+    aiutare con il codice. Offre modalità voce, integrazione con DALL·E,
+    navigazione web, Deep Research e Canvas. I limiti includono possibili errori
+    ("allucinazioni"), bias, comprensione superficiale e dipendenza dalle
+    istruzioni dell'utente. • Claude (Anthropic): Si distingue per un focus su
+    sicurezza, affidabilità e allineamento etico (constitutional AI). Gestisce
+    bene conversazioni lunghe, fornisce risposte misurate e controllate, è meno
+    incline ad "allucinare" e ha capacità di ricerca avanzata e interazione
+    vocale, oltre alla funzione "Artifacts" per contenuti visivi e interattivi.
+    È meno creativo e più conservativo di ChatGPT e può essere leggermente più
+    lento. • Gemini (Google DeepMind): Modello nativamente multimodale, capace
+    di gestire testo, immagini, audio, video e codice. Si integra perfettamente
+    con l'ecosistema Google (Search, Gmail, Docs, YouTube, Lens), accede a
+    informazioni aggiornate in tempo reale e ha ottime capacità di ragionamento
+    e problem solving. I limiti includono la dipendenza dall'ecosistema Google,
+    qualità variabile delle risposte e una maggiore prudenza. • Grok (xAI - Elon
+    Musk): Progettato per essere audace, irriverente e capace di interagire con
+    contenuti in tempo reale grazie all'integrazione con X (ex Twitter). Offre
+    uno stile più provocatorio, dati in tempo reale e un focus sulla libertà di
+    espressione. Include funzioni come DeepSearch, Think ed Edit Image. Può
+    essere meno adatto a usi accademici/professionali formali e più soggetto a
+    rischio di inaccuratezza per il suo stile. • Llama (Meta): Si distingue per
+    il suo approccio open-source, che permette a sviluppatori e aziende di
+    accedere e modificare il modello per scopi specifici. È leggero, efficiente
+    e ottimizzato per funzionare su dispositivi meno potenti, offrendo maggiore
+    controllo su privacy e dati rispetto ai servizi cloud. Le sue prestazioni
+    sono competitive con i modelli proprietari. Tuttavia, richiede competenze
+    tecniche per l'uso e non ha aggiornamenti in tempo reale se non integrato. •
+    Perplexity: Un motore di ricerca basato su AI, focalizzato su risposte
+    rapide, concise e basate su fonti affidabili. Offre risposte dirette, cita
+    sempre le fonti, è aggiornato in tempo reale e ha un'interfaccia intuitiva
+    senza pubblicità invasive. Ha una modalità Pro per funzionalità avanzate e
+    una funzione "snap to shop". Meno personalizzabile e creativo rispetto ai
+    chatbot, la qualità dipende dalle fonti web e può ereditare i loro bias. •
+    NotebookLM (Google): Strumento AI per organizzare, analizzare e sintetizzare
+    informazioni in modo efficiente, integrato con Google Workspace (Docs,
+    Drive). Permette organizzazione intelligente, ricerca avanzata contestuale,
+    sintesi automatica, estrazione di informazioni chiave, riassunti audio e
+    strumenti di apprendimento (quiz). Non inventa contenuti e cita sempre le
+    fonti. Consente la collaborazione in tempo reale. Meno flessibile per
+    conversazioni aperte e le modifiche ai documenti originali non si riflettono
+    automaticamente. 2. Intelligenze Artificiali per la Modifica di Immagini
+    L'AI ha rivoluzionato la creazione visiva, permettendo di generare immagini
+    di alta qualità da semplici descrizioni testuali senza richiedere competenze
+    avanzate in design o grafica. • Midjourney: ◦ Specializzato nella
+    generazione di immagini text-to-image con un approccio artistico e uno stile
+    visivo spesso più dettagliato e raffinato rispetto a DALL·E o Stable
+    Diffusion. ◦ Accessibile tramite interfaccia web, funziona con comandi
+    testuali (prompt). Genera 4 varianti dell'immagine richiesta, permettendo
+    poi di selezionare, migliorare o creare variazioni (Vary, Upscale, Zoom,
+    Editor, Rerun). ◦ Consente di usare immagini come riferimento (character,
+    style, image reference) e applicare stili specifici. ◦ La qualità
+    dell'immagine dipende dalla scrittura del prompt; si consiglia uno schema
+    (tipo di immagine, oggetto, ambientazione, stile, illuminazione/atmosfera) e
+    l'uso di ChatGPT per ottimizzare. ◦ Offre sezioni "Explore" e "Search" per
+    ispirazione dalla community e ricerca di reference. ◦ Applicazioni includono
+    arte, illustrazione, design, branding, intrattenimento, gaming, marketing e
+    fotografia realistica. Attualmente richiede un abbonamento. • DALL·E
+    (OpenAI): ◦ Genera immagini da descrizioni testuali, noto per la capacità di
+    creare immagini realistiche, illustrazioni e composizioni originali con alta
+    coerenza visiva. ◦ La versione più recente, DALL·E 3, è integrata
+    direttamente in ChatGPT, facilitando la generazione e modifica interattiva.
+    ◦ Offre funzionalità di editing avanzato con "inpainting" per modificare
+    aree specifiche di un'immagine. ◦ Limiti: Meno "stile" artistico rispetto a
+    Midjourney, difficoltà con dettagli complessi, filtri su contenuti
+    sensibili, meno opzioni di personalizzazione avanzata. Ha notevoli
+    difficoltà nella gestione del testo all'interno delle immagini (errori di
+    spelling, lettere distorte, poca leggibilità). Per il testo, si consiglia di
+    generare l'immagine senza testo e aggiungerlo con altri strumenti grafici, o
+    specificare "spazio vuoto per testo" nel prompt. • Stable Diffusion: ◦
+    Strumento open-source che può essere installato localmente, offrendo il
+    massimo livello di controllo sulla generazione di immagini. ◦ Vantaggi:
+    gratuità, flessibilità, controllo e capacità di generare testi leggibili se
+    abbinato a estensioni avanzate. ◦ Svantaggi: richiede competenza tecnica per
+    installazione e configurazione. • Adobe Firefly: ◦ Piattaforma di Adobe
+    dedicata all'AI per immagini, pensata per integrarsi con Photoshop,
+    Illustrator e Creative Cloud. ◦ Ideale per modificare immagini esistenti o
+    generare elementi visivi su misura all'interno del flusso di lavoro Adobe. ◦
+    Vantaggi: integrazione perfetta con l'ecosistema Adobe, ottimi strumenti per
+    l'editing creativo. ◦ Svantaggi: meno indicato per creare immagini
+    completamente da zero, richiede abbonamento Adobe. • 4o Image Generation
+    (GPT-4o): ◦ Funzionalità di OpenAI per generare immagini direttamente in
+    ChatGPT usando il modello GPT-4o. ◦ Miglioramenti nella resa delle immagini
+    e testo più accurato all'interno delle immagini. ◦ Utile per infografiche e
+    sticker con testo comprensibile. ◦ Svantaggi: ancora in sviluppo, può
+    produrre immagini tagliate o testi incomprensibili in piccole dimensioni. •
+    Leonardo AI: ◦ Molto apprezzato nel game design e nell'illustrazione, offre
+    immagini dettagliate e opzioni di personalizzazione avanzata, pur essendo
+    più accessibile di Stable Diffusion. ◦ Vantaggi: ottima resa per
+    illustrazioni e concept art, controllo approfondito dello stile grafico. ◦
+    Svantaggi: richiede pratica per ottenere risultati soddisfacenti. •
+    Playground AI: ◦ Strumento versatile per generare e modificare immagini in
+    modo interattivo, sia per stili fotografici che artistici. ◦ Vantaggi: molto
+    facile da usare anche per principianti, consente di creare immagini
+    gratuitamente (con limitazioni). ◦ Svantaggi: non raggiunge la qualità
+    artistica di strumenti più avanzati come Midjourney o Leonardo AI. •
+    PicLumen: ◦ Ottimizzato per il marketing, la pubblicità e la creazione di
+    contenuti visivi ad alto impatto. ◦ Vantaggi: risultati efficaci per
+    contenuti pubblicitari e branding. ◦ Svantaggi: minore flessibilità creativa
+    rispetto a Midjourney o Stable Diffusion. • Ideogram: ◦ Specializzato nella
+    generazione di immagini che includono testo chiaro e leggibile, superando un
+    limite comune a DALL·E e Midjourney. ◦ Vantaggi: utile per loghi, poster e
+    contenuti pubblicitari che combinano testo e immagini in modo armonico,
+    accessibile dal browser. ◦ Svantaggi: non offre la stessa varietà stilistica
+    di Midjourney o Stable Diffusion. • Flux AI: ◦ Generatore di immagini AI con
+    funzionalità di editing avanzato, permette di modificare e migliorare
+    progressivamente le immagini. ◦ Vantaggi: maggiore controllo creativo,
+    interfaccia flessibile per lavorare in modo iterativo. ◦ Svantaggi: meno
+    diffuso, con meno risorse di supporto, il che può renderlo meno immediato da
+    apprendere. Consigli per la scelta di un tool per immagini: • Principianti:
+    DALL·E o Playground AI per facilità d'uso. • Immagini artistiche di alto
+    livello: Midjourney, Leonardo AI o PicLumen. • Massima personalizzazione e
+    controllo: Stable Diffusion (richiede competenze tecniche) o Flux AI (più
+    accessibile). • Utenti Adobe: Adobe Firefly per l'integrazione con la
+    Creative Cloud. • Marketer/pubblicitari: Playground, Ideogram, 4o Image
+    Generation e PicLumen. 3. Intelligenze Artificiali per Video L'AI ha
+    trasformato il settore video, rendendo possibile generare video da testo
+    (text-to-video), modificare filmati esistenti e animare immagini statiche,
+    riducendo costi e tempi di produzione. Tuttavia, è una tecnologia ancora in
+    evoluzione. • Runway: ◦ Piattaforma con strumenti AI per editing video,
+    generazione di immagini e modellazione 3D, usata in cinema, pubblicità e
+    arte digitale. ◦ Caratteristiche: Interfaccia intuitiva, oltre 30 strumenti
+    AI (trasformazione immagini in video, da testo a video), integrazione con
+    software creativi (Adobe, Unity), elaborazione cloud per tempi di rendering
+    ridotti. ◦ Limiti: Piano gratuito limitato, requisiti computazionali
+    (connessione, hardware in alcuni casi), qualità variabile dei risultati. ◦
+    Applicazioni: Produzione cinematografica (es. Everything Everywhere All at
+    Once), marketing, design e arte digitale (es. videoclip di A$AP Rocky). •
+    Synthesia: ◦ Piattaforma avanzata per la creazione di video professionali
+    con avatar AI realistici. ◦ Caratteristiche: Vasta gamma di avatar AI,
+    supporto multilingue (oltre 140 lingue), interfaccia user-friendly,
+    personalizzazione degli avatar. ◦ Limiti: Espressività degli avatar meno
+    naturale in contesti emotivi, dipendenza dalla tecnologia AI, costi
+    (abbonamento a pagamento per funzioni complete). ◦ Applicazioni: Formazione
+    aziendale (scalabilità in più lingue), marketing e pubblicità (video
+    promozionali personalizzati), comunicazioni interne (es. campagna "Messi
+    Messages"). • Google Veo 3: ◦ Evoluzione del modello di generazione video di
+    Google DeepMind, unisce video ad alta definizione con audio sincronizzato
+    (dialoghi, suoni ambientali, musica) generato nativamente dall'AI. ◦ Parte
+    di Flow, un tool per creativi che combina Veo 3, Imagen 4 (immagini) e
+    Gemini (assistente linguistico). Permette di costruire scene modulari,
+    definire movimenti di camera, montare clip, e fondere storyboard, regia,
+    post-produzione e sound design con un prompt. ◦ Accesso limitato e a
+    pagamento negli USA. ◦ Implicazioni: Pubblicità, marketing, videomaking,
+    storytelling (prototipazione rapida, produzioni indipendenti di qualità
+    cinematica), educazione e formazione (corsi immersivi). ◦ Sfide e rischi:
+    Creazione di deepfake, questioni di copyright (addestramento su
+    YouTube/Reddit), rischio di eliminazione di posti di lavoro (ruoli
+    entry-level). • Sora (OpenAI): ◦ Modello AI per la generazione di video da
+    prompt testuali, ancora in fase di sviluppo e affinamento. ◦
+    Caratteristiche: Generazione video da testo, controllo creativo avanzato
+    (inquadrature, movimenti di camera, stili), consapevolezza spaziale e
+    temporale, alta risoluzione e dettagli visivi, possibilità di editing video
+    assistito dall'AI. ◦ Limiti: Qualità incostante (movimenti innaturali,
+    problemi di fisica), gestione imperfetta della logica narrativa, elevata
+    richiesta di risorse computazionali. ◦ Implicazioni etiche e di copyright:
+    Proprietà intellettuale, veridicità dei contenuti e rischio deepfake. • Luma
+    AI (Dream Machine): ◦ Strumento per la creazione di contenuti video, il
+    prodotto di punta Dream Machine (2024) genera video realistici da
+    descrizioni testuali con movimenti naturali e dettagli accurati. ◦
+    Interfaccia intuitiva, adatto per content creator e marketer per produrre
+    rapidamente brevi video. • HeyGen: ◦ Piattaforma AI per video con avatar
+    digitali realistici, supporta oltre 130 lingue ed è un competitor di
+    Synthesia. ◦ Funzionalità: Conversione testo in video, generazione script
+    automatica, personalizzazione avatar, "Talking Photo" (anima immagini
+    statiche), "FaceSwap". Utile per contenuti aziendali, marketing e
+    formazione. • Kling AI: ◦ Strumento avanzato di Kuaishou per la generazione
+    video da testo, crea video cinematografici con personaggi coerenti, scene
+    dettagliate e sincronizzazione labiale accurata. ◦ Permette di combinare
+    fino a quattro immagini con descrizioni testuali per creare una narrazione
+    fluida e supporta personaggi parlanti. • Hailuo AI: ◦ Piattaforma che
+    trasforma testi o immagini in video di alta qualità, disponibile come app
+    web e mobile. ◦ Caratteristiche: Modalità multiple (realistiche/animate),
+    rappresentazione coerente dei personaggi, comprensione semantica avanzata
+    (prompt complessi, effetti di illuminazione), miglioramento HD. • WanX AI
+    (Alibaba Cloud): ◦ Piattaforma avanzata per la generazione di video e
+    immagini da input testuali o visivi. ◦ WanX 2.1 supporta effetti testuali in
+    cinese e inglese, simula movimenti complessi con aderenza alle leggi fisiche
+    e offre oltre 100 template di stili artistici. ◦ Problema critico: La sua
+    natura open-source ha portato a un rapido utilizzo per creare video non
+    consensuali e illegali. Consigli per la scelta di un tool per video: La
+    scelta dipende da obiettivo, facilità d'uso, funzionalità, costi e risorse
+    di supporto. Per i principianti che cercano video formativi con avatar
+    virtuali, HeyGen e Synthesia sono buone scelte. 4. Tool con Intelligenze
+    Artificiali (Integrate in Piattaforme Esistenti) L'intelligenza artificiale
+    è stata integrata in molti strumenti per la creazione di contenuti,
+    semplificando e velocizzando il lavoro di designer, marketer e creator
+    digitali. Molte funzioni avanzate sono disponibili tramite piani premium. •
+    Canva AI (Magic Studio o Strumenti Magici): ◦ Canva, popolare piattaforma di
+    design grafico, ha integrato diverse funzioni AI per rendere il processo
+    creativo più intuitivo. ◦ La suite Magic Studio include strumenti avanzati
+    per la generazione di testi, immagini, video e layout. ◦ Strumenti
+    principali: ▪ Magic Write: Assistente di scrittura per blog, social media,
+    script video. ▪ Magic Design: Suggerimenti di design personalizzati per
+    progetti visivi accattivanti. ▪ Magic Media: Crea immagini e video da prompt
+    testuali, sfruttando DALL·E e Stable Diffusion. ▪ Magic Edit: Permette di
+    modificare e migliorare immagini esistenti (rimozione/sostituzione di
+    oggetti). ▪ Magic Switch: Trasforma automaticamente un progetto in diversi
+    formati (es. da post social a presentazione). ▪ Magic Grab: Isola e manipola
+    elementi specifici all'interno delle immagini, offrendo maggiore controllo
+    creativo
+      <div class="bott-avaind">
+        <ul>
+          <li><a href="../index.html">home</a></li>
+          <li><a href="ia2.html">next page</a></li>
+        </ul>
+      </div>
+   <div >
+  </body>
 </html>
