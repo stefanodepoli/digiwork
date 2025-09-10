@@ -3,35 +3,54 @@
 /*vertical mobile*/
 @media only screen and (max-width: 480px)
 {
- span
+ span, .pi
  {
     background-color: rgb(227, 123, 209);
+ }
+ span, .gr
+ {
+    background-color: rgb(151, 205, 162);
  }
 
 }
  /*orizzontal mobile*/
 @media only screen and (min-width: 481px) and (max-width:800px)
 {
- span
+ span, .pi
  {
     background-color: rgb(227, 123, 209);
  }
+  span, .gr
+ {
+    background-color: rgb(151, 205, 162);
+ }
+
 
  }
  /*tablet*/
 @media only screen and (min-width: 768px) and (max-width:1023px)
 {
- span
+ span, .pi
  {
     background-color: rgb(227, 123, 209);
  }
 
 }
+ span, .gr
+ {
+    background-color: rgb(151, 205, 162);
+ }
+
  /*desktop*/
 @media only screen and (min-width:1024px)
 {
- span
+ span, .pi
  {
     background-color: rgb(227, 123, 209);
  }
+  span, .gr
+ {
+    background-color: rgb(151, 205, 162);
+ }
+
 }

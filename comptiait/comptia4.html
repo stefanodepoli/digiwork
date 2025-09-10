@@ -15,10 +15,260 @@
           <li><a href="index.html">L1</a></li>
           <li><a href="comptia2.html">L2</a></li>
           <li><a href="comptia3.html">L3</a></li>
+          <li><a href="comptia4.html">L5</a></li>
+
         </ul>
       </div>
       <main>
         <h1>lezione4</h1>
+        Dichi fissi lezione 7 I dischi fissi sono una componente fondamentale di
+        un computer, rappresentando la sua memoria principale. Essi sono memorie
+        economiche, veloci e affidabili, e la loro capacità si misura in
+        gigabyte o terabyte. Il disco fisso più capiente attualmente è un hard
+        disk da 8 TB. Esistono due tipologie principali di dischi fissi: • Hard
+        Disk Drive (HDD): Sono la tipologia più diffusa e sono montati sulla
+        maggior parte dei PC. • Solid State Drive (SSD): Sono molto più veloci
+        ma anche più costosi, e per questo meno diffusi. 1. Hard Disk Drive
+        (HDD) Gli HDD sono composti da: • Uno o più piatti magnetici su cui
+        vengono scritti i dati. I dischi per PC fissi hanno piatti da 3,5" di
+        diametro, mentre quelli per portatili hanno piatti da 2,5". • Un braccio
+        attuatore con due testine per piatto, che servono per leggere e scrivere
+        su ogni lato del piatto. • Motori elettrici per muovere i bracci e
+        ruotare i piatti. La velocità degli hard disk è cruciale, poiché spesso
+        il disco rigido può diventare un "collo di bottiglia" che rallenta le
+        operazioni del PC, dato che componenti come la CPU e la RAM sono molto
+        più rapidi. La velocità dipende da due fattori: • Giri al minuto (rpm):
+        Più velocemente ruotano i piatti, più dati possono essere scritti o
+        letti. I dischi rigidi normali hanno velocità che vanno da 5400 a 15000
+        rpm. • Cache: Come le CPU, anche i dischi rigidi hanno una cache
+        integrata in cui vengono salvati i dati usati più spesso, per accedervi
+        più velocemente. 2. Solid State Drive (SSD) I dischi SSD sono basati su
+        memoria di tipo SRAM (Static RAM), che non prevede parti in movimento.
+        Questa caratteristica conferisce loro numerosi vantaggi rispetto agli
+        HDD: • Maggiore velocità: Non essendoci piatti da portare in rotazione
+        all'avvio e non dovendo attendere il posizionamento della testina,
+        l'accesso ai dati è quasi istantaneo. Anche gli SSD dispongono di una
+        cache. • Minore consumo energetico: Non necessitano di motori elettrici.
+        • Maggiore resistenza agli urti: Grazie all'assenza di parti mobili. Il
+        loro costo è significativamente più elevato (il rapporto prezzo/capacità
+        è quasi 10 volte più alto), sebbene sia destinato a scendere. Il prezzo
+        varia anche in base al tipo di celle di memoria: le SLC (single-level
+        cells) sono più costose, veloci e affidabili delle MLC (multi-level
+        cells), in quanto contengono un solo bit per cella. 3. Interfacce di
+        Collegamento dei Dischi Fissi I dischi fissi possono essere collegati
+        tramite diverse porte: • SCSI (Small Computer System Interface): Usato
+        in passato sui server per collegare diversi dischi in "catena". I cavi
+        SCSI interni erano composti da molti fili (50 o 68) che trasportavano i
+        dati in modo parallelo. Era preferito al PATA in alcuni contesti perché
+        quest'ultimo permetteva di collegare solo fino a 4 dischi, troppo pochi
+        per certi server. • PATA (Parallel Advanced Technology Attachment) o IDE
+        (Integrated Drive Electronics): Usato sui vecchi dischi fissi. Utilizza
+        un cavo a nastro di 40 fili, capace di trasportare dati in parallelo e
+        dotato di 3 connettori per connettere due unità. Le due unità collegate
+        allo stesso cavo devono essere configurate una in modalità master e
+        l'altra in slave tramite appositi jumper. • SATA (Serial ATA): Oggi è lo
+        standard su PC e server. Il cavo è composto da soli 7 fili, risultando
+        più sottile e potendo arrivare a 1 metro di lunghezza. La trasmissione
+        avviene in modo seriale ed è più veloce rispetto a PATA e SCSI. Si può
+        connettere una sola unità per cavo, ma non ci sono limiti al numero di
+        porte sulla scheda madre (spesso 8 o più). Supporta l'Hot-Swap, a
+        condizione che il controller SATA sul BIOS sia impostato su AHCI
+        (Advanced Controller Host Interface) prima dell'installazione del
+        sistema operativo. Le versioni di PATA e SATA hanno gradualmente
+        aumentato la velocità di trasferimento dei dati: • PATA: Da PATA-1 (8.3
+        Mbps) a PATA-7 (133 MBps). • SATA: Da SATA 1.0 (187 MBps teorici, 150
+        MBps reali) a SATA 3.0 (750 MBps teorici, 600 MBps reali). 4.
+        Partizionamento del Disco Fissos Il partizionamento è la suddivisione
+        del disco fisso in una o più parti, dette partizioni o volumi. Questo
+        processo serve a organizzare lo spazio e può essere utilizzato per scopi
+        diversi, come installare più sistemi operativi o tenere separati
+        documenti e sistema principale. Windows riconosce tre tipi di schemi di
+        partizionamento: • Master Boot Record (MBR): È lo schema universale, ma
+        permette fino a 4 partizioni primarie, ciascuna con una dimensione
+        massima di 2 TB. Una delle partizioni (detta "attiva") deve contenere il
+        sistema operativo principale. • GUID Partition Table (GPT): Introdotto
+        più di recente, permette un numero quasi illimitato di partizioni
+        (Windows ne supporta massimo 128) e dimensioni fino a 7 zettabyte
+        (miliardi di terabyte). La scheda madre deve avere UEFI per leggere
+        dischi GPT. • Dischi dinamici: Permettono di combinare più dischi
+        assieme, ad esempio in configurazioni RAID. Un disco può essere reso
+        "dinamico" solo tramite Gestione disco. Esistono anche altri tipi di
+        partizioni create automaticamente o presenti su alcuni sistemi: •
+        Partizione di sistema di Windows: Una partizione di 100 MB creata
+        durante l'installazione di Windows per salvare i file fondamentali per
+        il suo funzionamento. È inaccessibile dal sistema operativo stesso,
+        rendendone il contenuto protetto. • Partizioni nascoste (sui portatili):
+        Invisibili a Windows e accessibili solo dal BIOS, sono spesso utilizzate
+        come partizioni di ripristino (factory recovery partition) per salvare
+        una copia di backup del sistema e riportare rapidamente il PC alle
+        impostazioni di fabbrica. Come partizionare un disco: • I dischi fissi
+        secondari e quelli esterni possono essere partizionati da Windows
+        utilizzando Gestione disco o software di terze parti. Gestione disco
+        permette di aggiungere e cancellare partizioni (non quella del sistema
+        operativo), e di aumentarne o ridurne le dimensioni in modo non
+        distruttivo (senza cancellare i dati). La ripartizionamento normale,
+        invece, cancella tutti i dati. • Il disco fisso principale viene
+        partizionato durante l'installazione di Windows. • Lo strumento a riga
+        di comando diskpart permette di gestire le partizioni (creare,
+        cancellare, estendere, ridurre) in modo simile a Gestione disco. È
+        disponibile anche nella Console di ripristino di Windows. 5.
+        Formattazione del Disco Fissos Dopo il partizionamento, si procede con
+        la formattazione, che è l'organizzazione finale dello spazio di una
+        partizione. La formattazione consiste nel dividere lo spazio disponibile
+        in settori, creando una sorta di "mappa" con coordinate per i dati. Ci
+        sono due tipi di formattazione: • Formattazione di basso livello: È una
+        formattazione più radicale che consiste nel suddividere la superficie
+        dei piatti in settori (di norma 512 byte ciascuno), assegnando a ogni
+        settore delle coordinate. Generalmente viene svolta in fabbrica e non è
+        necessario ripeterla. Questa formattazione compromette maggiormente la
+        possibilità di recuperare dati in caso di formattazione accidentale,
+        rendendola più sicura per lo smaltimento di dischi contenenti dati
+        sensibili. • Formattazione di alto livello (o "veloce"): Consiste nel
+        creare il file system, cioè un "schedario" dove vengono annotate le
+        coordinate dei settori su cui sono scritti i file. Viene anche creata
+        una cartella radice, che è la principale. Questo tipo di formattazione è
+        più rapida, ma i dati precedenti non vengono fisicamente cancellati,
+        bensì le loro coordinate vengono azzerate; i dati rimangono sul disco
+        finché non vengono sovrascritti. Di conseguenza, è più facile recuperare
+        dati da una formattazione di alto livello. File System: Il file system è
+        una parte del sistema operativo che si occupa di organizzare e gestire
+        gli archivi (dischi interni, esterni, chiavette, ecc.). Crea tabelle che
+        riportano le coordinate di ogni file sui settori, permettendo al sistema
+        operativo di ritrovarli e gestirne il contenuto. Windows può formattare
+        con tre file system principali: • New Technology File System (NTFS): È
+        l'unica scelta per formattare la partizione di Windows a partire da
+        Windows Vista. Offre opzioni avanzate per la gestione dei file e riduce
+        la frammentazione. Può presentare incompatibilità con sistemi operativi
+        non Microsoft, per cui non è consigliabile per memorie esterne destinate
+        a essere usate con sistemi diversi da Windows. • File Allocation Table
+        32 (FAT32): La scelta predefinita prima di NTFS. Ha limiti
+        significativi: 4 GB per i singoli file e 2 TB per ciascuna partizione. È
+        un file system più generico e può essere letto da altri sistemi
+        operativi. • External FAT (exFAT, anche detto FAT64): Unicamente per
+        memorie esterne (dischi fissi e memorie flash) secondo l'interfaccia
+        grafica di Windows. Tuttavia, tramite riga di comando, è possibile
+        forzarne l'uso anche su dischi interni. Alza i limiti di FAT32 a 16
+        exabyte (milioni di terabyte) per i file e 64 zettabyte (miliardi di
+        terabyte) per ciascuna partizione. La formattazione da riga di comando
+        si effettua con il comando format. Permette di indicare parametri
+        opzionali come /FS: per scegliere il file system e /A: per scegliere la
+        dimensione delle unità di allocazione (settori). Il terminale offre un
+        controllo più granulare rispetto all'interfaccia grafica, ad esempio
+        consentendo dimensioni dei settori più piccole per NTFS. 6. Funzionalità
+        Avanzate di NTFS NTFS offre diversi attributi avanzati per file e
+        cartelle: • Protezione tramite cifratura (crittografia): Permette di
+        rendere i file illeggibili senza una chiave di decifratura. Ad esempio,
+        il software Bitlocker può cifrare un intero hard disk usando questa
+        funzionalità nativa di Windows. È estremamente sicuro, ma se la chiave
+        viene persa, i dati sono irrecuperabili anche per il proprietario. I
+        file e le cartelle cifrate sono segnalati in verde. • Riduzione dello
+        spazio tramite compressione: Permette di comprimere file e cartelle
+        automaticamente per guadagnare spazio sul disco. I file compressi sono
+        segnalati in blu. Un'importante limitazione è che una cartella non può
+        essere contemporaneamente cifrata e compressa. • Gestione dei permessi:
+        Sui dischi NTFS, tutti i file e le cartelle hanno una lista (Access
+        Control List - ACL) che indica quali utenti e gruppi possono accedervi e
+        con quale tipo di permesso. Il creatore del file o della cartella ne
+        diventa il proprietario, ma gli amministratori possono assumerne la
+        proprietà per modificare i permessi. I tipi di permessi includono: ◦
+        Lettura: Permette di visualizzare file e sottocartelle o il contenuto di
+        un file. ◦ Scrittura: Permette di creare file e sottocartelle o
+        modificare il contenuto di un file. ◦ Scrittura ed esecuzione: Include i
+        permessi di scrittura più la possibilità di aprire eseguibili. ◦
+        Modifica: Include i permessi di scrittura più la possibilità di
+        eliminare la cartella o il file. ◦ Controllo completo: Include tutti i
+        permessi. • Gestione quote: Gli amministratori possono impostare un
+        limite allo spazio occupato da ciascun utente su una partizione. Questa
+        funzionalità, solitamente disattivata, può essere abilitata per limitare
+        l'uso dello spazio o impostare soglie di avviso. 7. RAID (Redundant
+        Array of Independent Disks) Il RAID è una tecnologia che permette di
+        utilizzare più dischi fissi in parallelo per ottenere due obiettivi
+        principali: far fronte all'eventuale rottura di uno di essi (tolleranza
+        ai guasti) e, in secondo luogo, aumentare la velocità di trasferimento.
+        I dati vengono salvati in modo ridondante, cioè su più dischi, in modo
+        da poterli sempre recuperare qualora un disco si rompa. La gestione dei
+        dischi in RAID può avvenire: • Via software: Ad esempio, con Gestione
+        disco (su dischi dinamici) o Spazi di archiviazione (da Windows 8). •
+        Via hardware: Tramite il BIOS (se lo supporta) o installando una scheda
+        di espansione detta controller RAID. Le tipologie di RAID più comuni
+        sono: • RAID 0 (Disk Striping): Richiede almeno 2 dischi. I dati sono
+        distribuiti equamente tra i dischi, il che aumenta la velocità di
+        lettura e scrittura. Tuttavia, se uno dei dischi si guasta, tutti i dati
+        vengono persi, quindi non offre tolleranza ai guasti. • RAID 1 (Disk
+        Mirroring): Richiede almeno 2 dischi. Tutti i dati sono scritti su
+        entrambi i dischi. Se uno si guasta, i dati sono recuperabili dall'altro
+        disco, offrendo totale tolleranza ai guasti. Per contro, dimezza la
+        capacità disponibile e non aumenta la velocità. • RAID 5 (Disk Striping
+        with Distributed Parity): Richiede almeno 3 dischi. I dati sono
+        distribuiti equamente su tutti i dischi, e in più vengono creati dei
+        dati di parità. Questi dati di parità, calcolati con l'operazione logica
+        XOR, permettono il recupero dei file in caso di rottura di un singolo
+        disco. • RAID 6 (Disk Striping with Extra Parity): Richiede almeno 5
+        dischi. Simile al RAID 5, ma protegge anche dal guasto di due dischi. •
+        RAID 10 (1+0) (Nested RAID): Richiede 4 dischi. È un ibrido tra RAID 1
+        (per la ridondanza) e RAID 0 (per la velocità). Per la configurazione
+        RAID, è consigliabile utilizzare dischi uguali (stessa dimensione, e
+        idealmente stesso modello e marca) per evitare differenze prestazionali,
+        anche se dischi di marche diverse ma con la stessa dimensione possono
+        funzionare. Se i dischi non sono della stessa dimensione, parte dello
+        spazio del disco più grande verrà reso inutilizzabile. 8. Manutenzione e
+        Gestione del Disco Aggiungere un disco fisso a un PC fisso richiede di
+        verificare: • Se c'è un alloggiamento disponibile. • Se c'è una porta
+        PATA o SATA libera sulla scheda madre (le porte SATA possono avere
+        colori diversi per distinguere la versione o il supporto RAID;
+        consultare il manuale della scheda madre). • Se è disponibile un
+        connettore Molex o SATA per l'alimentazione. Per condividere cartelle in
+        rete tramite Windows: • Accedere alle Proprietà della cartella > scheda
+        Condivisione > Condivisione avanzata. • Sui dischi NTFS, è necessario
+        anche configurare i permessi, ad esempio aggiungendo "Everyone" per
+        consentire l'accesso a tutti gli utenti. • Una cartella condivisa può
+        essere mappata assegnandole una lettera di unità in "Computer",
+        cliccando su "Connetti unità di rete" e specificando il percorso con il
+        sistema UNC (es. \\nomeserver\nomecartella) o cercando l'unità. • Il
+        comando net in CLI permette di gestire la condivisione in rete: net view
+        mostra i PC nel workgroup, net view hostname mostra le risorse condivise
+        da un PC, net use lettera \\server\cartella mappa una cartella di rete.
+        Per il controllo degli errori sul disco, Windows offre due strumenti
+        simili: • Scandisk: Avviabile dalle proprietà della partizione (scheda
+        Strumenti). Corregge gli errori del file system e può cercare settori
+        danneggiati (operazione molto lenta). • Checkdisk (comando chkdsk): La
+        versione base controlla solo la presenza di errori. L'opzione /f ripara
+        gli errori (non può essere eseguita sulla partizione del sistema
+        operativo, ma può essere programmata per il riavvio successivo).
+        L'opzione /r tenta il recupero dei file dai settori danneggiati (e
+        implica anche /f). Quando il disco fisso è pieno, Windows lancia
+        automaticamente Pulizia disco per liberare spazio. Si possono eliminare
+        file temporanei, file del cestino, anteprime di video e foto, e altro.
+        Può essere avviata manualmente dalle proprietà della partizione (scheda
+        Generale). 9. L'Interfaccia a Riga di Comando (CLI) L'interfaccia a riga
+        di comando (CLI), nota in Windows come Prompt dei comandi (cmd), è un
+        ambiente testuale dove si interagisce con il computer tramite istruzioni
+        scritte. Ai suoi esordi, i sistemi operativi avevano solo questo tipo di
+        interfaccia. Il Prompt dei comandi è un'eredità di MS-DOS, che è stato
+        il vero sistema operativo dei PC fino all'uscita di Windows 95 (anche
+        Windows 95 e 98 installavano MS-DOS in background). Windows XP è stato
+        il primo sistema operativo Windows completamente indipendente da MS-DOS.
+        La CLI è più potente e completa dell'interfaccia grafica (GUI). Non è
+        possibile riprodurre tutte le potenzialità del terminale tramite una
+        GUI. Per questo, in ambienti professionali, come la gestione di server
+        Linux, si utilizza spesso solo la CLI. Alcuni comandi importanti in CLI
+        includono: • help: Per ottenere un elenco di tutti i comandi disponibili
+        o informazioni specifiche su un singolo comando (es. help dir). • dir:
+        Visualizza l'elenco di file e sottodirectory (cartelle) in una
+        directory. Può essere usato con parametri opzionali, come /P per
+        visualizzare una pagina per volta. • cd: Permette di cambiare la
+        directory corrente (es. cd users per entrare, cd .. per uscire). • tree:
+        Mostra la struttura gerarchica delle directory e dei file. • diskpart:
+        L'equivalente a riga di comando di Gestione disco. Permette di elencare,
+        selezionare e gestire dischi e partizioni. • format: Permette di
+        formattare una partizione specificando il file system, l'etichetta del
+        volume e la dimensione delle unità di allocazione. • chkdsk: Strumento
+        per il controllo e la riparazione degli errori del disco. • ipconfig e
+        net start: Altri comandi utili che si incontreranno nello studio. È
+        importante essere precisi nella digitazione dei comandi in CLI, poiché
+        non tollera errori di battitura. Per facilitare l'uso, è possibile
+        richiamare i comandi precedentemente digitati utilizzando le frecce
+        su/giù sulla tastiera.
       </main>
       <div class="bott-avaind">
         <ul>
@@ -26,8 +276,9 @@
           <li><a href="index.html">L1</a></li>
           <li><a href="comptia2.html">L2</a></li>
           <li><a href="comptia3.html">L3</a></li>
+          <li><a href="comptia4.html">L5</a></li>
         </ul>
       </div>
-   </div>
+    </div>
   </body>
 </html>

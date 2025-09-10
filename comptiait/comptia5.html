@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>digiwork/comptia/lez4</title>
+    <link rel="stylesheet" href="../assets/css/file-css.css" />
+    <link rel="stylesheet" href="assets/css/css_comptia.css" />
+  </head>
+  <body>
+    <div>
+      <div class="bott-avaind">
+        <ul>
+          <li><a href="../index.html">home</a></li>
+          <li><a href="index.html">L1</a></li>
+          <li><a href="comptia2.html">L2</a></li>
+          <li><a href="comptia3.html">L3</a></li>
+          <li><a href="comptia4.html">L4</a></li>
+        </ul>
+      </div>
+      <main>
+        <h1>lezione8</h1>
+        La lezione ha esplorato in profondità vari aspetti della gestione dei
+        dischi e delle risorse di rete, con un focus sul bilanciamento tra
+        prestazioni e sicurezza dei dati, l'aggiunta di hardware e la
+        condivisione di risorse. 1. RAID (Redundant Array of Independent Disks)
+        Il RAID è un sistema di accorpamento di dischi, ovvero un sistema di
+        dischi dinamici, il cui scopo principale è duplice: 1. Migliore velocità
+        di esecuzione: Aumentare la velocità di scrittura e lettura dagli hard
+        disk. 2. Ridondanza (Fault Tolerance): Garantire la possibilità di
+        recuperare i dati nel caso in cui uno o più dischi si guastino o si
+        rompano. L'obiettivo è quindi avere un sistema più prestante e più
+        tollerante ai guasti. Indipendentemente dal numero di dischi utilizzati
+        nella configurazione, l'utente vede e utilizza il sistema RAID come se
+        fosse un singolo disco. Sono state esaminate diverse configurazioni
+        RAID, ognuna con un diverso bilanciamento tra prestazioni e tolleranza
+        agli errori e un diverso numero minimo di dischi: • RAID 0 (Striping):
+        Richiede un minimo di due dischi. Migliora significativamente le
+        prestazioni distribuendo i dati su più dischi, ma non offre alcuna
+        ridondanza. Se uno dei dischi si rompe, tutti i dati vengono persi. È
+        considerato un sistema "incompleto" perché rispetta solo la
+        caratteristica della velocità. • RAID 1 (Mirroring): Richiede un minimo
+        di due dischi. Offre ridondanza duplicando i dati su entrambi i dischi
+        (mirroring), in modo che i dati siano sempre disponibili anche se uno
+        dei dischi si guasta. Anche questo è considerato "incompleto" perché
+        rispetta solo la tolleranza ai guasti. • RAID 5: Per ottenere sia
+        prestazioni che tolleranza agli errori, richiede un minimo di tre
+        dischi. Distribuisce i dati e le informazioni di parità tra tutti i
+        dischi, consentendo il recupero dei dati in caso di guasto di un singolo
+        disco. • RAID 6: Simile al RAID 5, ma differisce per il numero di dischi
+        utilizzati (minimo cinque) e offre una maggiore tolleranza agli errori,
+        permettendo il guasto simultaneo di due dischi senza perdita di dati. È
+        cruciale sottolineare che il RAID non è un sistema di backup. Sebbene
+        offra tolleranza alla rottura di uno o più dischi, non protegge dalla
+        perdita di dati dovuta a guasti multipli che superano la tolleranza del
+        sistema o ad altri eventi. Per questo motivo, i backup regolari sono
+        comunque indispensabili anche per i sistemi RAID. <br> 2. Sistema Spanning
+        (JBOD - Just a Bunch Of Disks) Lo Spanning, noto anche come JBOD, è un
+        altro sistema dinamico di accorpamento di dischi, che è stato inventato
+        da Microsoft. La sua unica caratteristica è quella di unire più dischi
+        di diverse dimensioni per farli apparire all'utente come un unico grande
+        disco. • A differenza del RAID, non offre né ridondanza né un aumento
+        della velocità di scrittura o lettura. • Il vantaggio principale è la
+        comodità di gestione, permettendo all'utente di non doversi preoccupare
+        di dove ha salvato i file su dischi separati. • Se un disco si rompe in
+        una configurazione JBOD, si perdono i dati contenuti in quel disco.
+        L'accorpamento si infrange, e il recupero dei dati dagli altri dischi è
+        problematico e non garantito per un utente comune. • Pertanto, i sistemi
+        JBOD, non avendo alcuna tolleranza agli errori, devono essere
+        regolarmente backuppati. 3. Aggiungere un hard disk su PC vecchio o
+        nuovo (PATA/SATA) L'aggiunta di un disco fisso è un'operazione comune,
+        specialmente su sistemi desktop, workstation o server, che offrono più
+        connettori rispetto a portatili o mini PC. È essenziale verificare la
+        disponibilità di connettori liberi sulla scheda madre e di cavi di
+        alimentazione dall'alimentatore. • Sistemi PATA (vecchi): Lo standard
+        PATA (o IDE) non è più utilizzato da circa 20 anni. Presenta diverse
+        problematiche: ◦ Limitazioni di connettori: Le schede madre PATA di
+        solito hanno un massimo di due connettori, ciascuno in grado di ospitare
+        due dispositivi (per un totale di quattro). Spesso, questi erano già
+        tutti occupati (es. da hard disk e masterizzatore ottico). ◦
+        Disponibilità e costi dei dischi: Trovare dischi PATA nuovi è quasi
+        impossibile; quelli usati sono vecchi e di piccola capacità (es. 40-250
+        GB), ma costosi in proporzione rispetto ai dischi moderni. ◦ Soluzioni:
+        Per aggiungere spazio su un sistema PATA, le opzioni includono: ▪
+        Utilizzare un hard disk esterno USB. ▪ Acquistare un adattatore
+        SATA-PATA per collegare un disco SATA moderno a un connettore PATA. ▪
+        Aggiungere una scheda controller PCI (per i vecchi slot PCI) che
+        fornisca connettori SATA. • Sistemi SATA (contemporanei): L'aggiunta di
+        dischi è generalmente più semplice. ◦ Verifiche: È necessario
+        controllare la presenza di connettori SATA liberi sulla scheda madre e
+        di cavi di alimentazione sufficienti dall'alimentatore. ◦ Soluzione per
+        mancanza di connettori: Se non ci sono connettori SATA liberi, si può
+        aggiungere un controller aggiuntivo (una scheda di espansione con
+        connettori SATA e interfaccia PCI Express). 4. Controller Un controller
+        è una scheda di espansione che si inserisce negli slot della scheda
+        madre (come PCI o PCI Express) per aggiungere funzionalità al computer.
+        In questo contesto, i controller sono utilizzati per aggiungere
+        connettori SATA al sistema. • Per i vecchi computer PATA, un controller
+        PCI con connettori SATA permette di utilizzare dischi moderni. • Per i
+        computer contemporanei SATA che hanno esaurito i connettori sulla scheda
+        madre, si usano controller con interfaccia PCI Express. 5. Alimentazione
+        Hard Disk e problematiche nello sdoppiare l'alimentazione
+        L'alimentazione degli hard disk viene fornita direttamente
+        dall'alimentatore (Power Supply Unit - PSU), non dalla scheda madre. La
+        scheda madre alimenta principalmente la CPU e le schede di espansione. •
+        Numero limitato di cavi: Gli alimentatori hanno un numero finito di cavi
+        di alimentazione, alcuni per la scheda madre, altri per gli hard disk,
+        altri per le schede video. • Problemi di alimentazione: Se mancano cavi
+        per i nuovi dischi, ci sono due soluzioni: ◦ Sdoppiatori o triplicatori
+        di cavi: Esistono connettori che permettono di collegare più dischi a un
+        singolo cavo di alimentazione. Questa soluzione è accettabile per i
+        dischi SSD che consumano poca energia. ◦ Per gli HDD (hard disk
+        meccanici), che richiedono molta più energia per far girare i dischi e
+        spostare le testine, sdoppiare l'alimentazione non è l'ideale e può
+        causare malfunzionamenti o un funzionamento instabile. I dischi
+        potrebbero non avere sufficiente forza per operare correttamente e si
+        potrebbe percepire un rumore anomalo. ◦ Sostituzione dell'alimentatore:
+        La soluzione più efficace (ma più costosa) è cambiare l'alimentatore con
+        uno più potente e che disponga di un numero sufficiente di cavi di
+        alimentazione per tutte le unità. La scheda madre supporta una certa
+        potenza e voltaggio, ma l'alimentatore fornisce la stessa potenza e
+        voltaggio alla scheda madre indipendentemente dalla sua potenza
+        complessiva. La differenza sta nel numero di cavi per i componenti
+        aggiuntivi come gli hard disk. 6. Rete locale (LAN) di casa Una rete
+        locale (LAN) è una rete presente all'interno delle mura di una
+        struttura, come un'azienda, un ufficio o una casa. • Creazione: A casa,
+        una LAN viene creata automaticamente quando si connette un router, un
+        dispositivo di rete che gestisce le comunicazioni tra più dispositivi e
+        con la rete internet. • Scopo: Sebbene la maggior parte degli utenti sia
+        consapevole di utilizzare il router per la connessione a internet
+        (grazie al modem integrato), molti non sono consapevoli di avere una
+        rete LAN e di poter scambiare file tra i computer connessi alla stessa
+        rete senza ricorrere a chiavette USB. • Lo standard di rete utilizzato è
+        l'Ethernet, che funziona sia con connessioni Wi-Fi che cablate. 7.
+        Condivisione delle cartelle in rete e Samba La condivisione di cartelle
+        in rete permette di scambiare file tra computer collegati alla stessa
+        LAN. • Configurazione: Si effettua tramite le proprietà della cartella,
+        nella scheda "Condivisione avanzata". Qui si può scegliere il nome della
+        condivisione, il numero massimo di connessioni simultanee e le
+        autorizzazioni. ◦ L'utente "Everyone" (chiunque sulla rete) è un'opzione
+        predefinita per rendere la cartella visibile a tutti. ◦ È possibile
+        anche specificare utenti o computer specifici per una condivisione più
+        selettiva. • Accesso: Le cartelle condivise sono visibili nelle risorse
+        di rete degli altri computer. • Mappatura come unità di rete: Per
+        maggiore comodità, una cartella condivisa può essere "mappata" come
+        unità di rete, assegnandole una lettera. In questo modo, viene trattata
+        come se fosse un disco locale e appare in "Questo PC". • Compatibilità
+        (Samba): La condivisione di rete funziona tra sistemi operativi diversi
+        (Windows, Mac, Linux) grazie al protocollo Samba (SMB). Questo
+        protocollo è universalmente utilizzato per lo scambio di file tra
+        piattaforme diverse. • Smartphone: Per gli smartphone, la condivisione
+        di rete non è nativa e richiede l'installazione di applicazioni
+        specifiche (come CX File Explorer per Android) per esplorare le cartelle
+        condivise sulla LAN. 8. Verifica con comando Il comando net view può
+        essere utilizzato nel terminale per visualizzare le risorse di rete
+        condivise. • Se digitato senza specificare un nome di computer, mostrerà
+        i server (altri computer) che stanno condividendo qualcosa sulla rete. •
+        Specificando il nome di un computer (es. net view \\NomeComputer),
+        mostrerà le risorse condivise da quel computer specifico. • Questo
+        comando è utile se l'interfaccia grafica (Esplora File alla voce "Rete")
+        non mostra correttamente le risorse condivise. • Il comando net è molto
+        più articolato e permette anche di condividere risorse e mappare
+        cartelle tramite terminale, sebbene queste procedure più complesse non
+        siano state approfondite nella lezione. 9. Scandisk e la sua evoluzione
+        Scandisk, conosciuto anche come Controllo Errori (nell'interfaccia
+        grafica di Windows) o Checkdisk (CHKDsk) (nel terminale), è uno
+        strumento di manutenzione del disco. • Scopo: Serve a controllare e
+        riparare errori del file system e settori danneggiati sul disco. •
+        Accesso: Può essere avviato dalle proprietà del disco (scheda
+        "Strumenti" -> "Controllo errori") o tramite il comando chkdsk nel
+        terminale. • Funzionamento: I moderni sistemi operativi monitorano
+        costantemente la salute dei dischi, rendendo meno frequente la necessità
+        di avviare manualmente questo strumento per i dischi interni. Tuttavia,
+        è utile per dischi esterni o chiavette USB. • Parametri opzionali: ◦ /F
+        (fix): Cerca di riparare gli errori, ma potrebbe causare la perdita di
+        dati. ◦ /R (recover): Cerca di recuperare i dati dai settori danneggiati
+        spostandoli in altri settori, tentando di prevenire la perdita di dati.
+        • Eseguire chkdsk sul disco primario (C:) richiede spesso un riavvio del
+        sistema. 10. Pulizia Disco La Pulizia disco è un software integrato in
+        Windows che aiuta a liberare spazio su disco eliminando file non
+        necessari. • Funzione: Rimuove file temporanei di internet, cache, file
+        di ottimizzazione, elementi nel cestino, anteprime di immagini e altri
+        file temporanei che si accumulano nel tempo. • Accesso: Può essere
+        richiamato direttamente dalla barra di ricerca di Windows. • Utilizzo:
+        Permette di scegliere quali categorie di file eliminare e mostra lo
+        spazio totale che verrà liberato. È utile per recuperare spazio che può
+        ammontare a diversi gigabyte. Questi punti rappresentano una sintesi
+        completa degli argomenti trattati nella lezione, fornendo dettagli e
+        spiegazioni basate sulle fonti.
+      </main>
+      <div class="bott-avaind">
+        <ul>
+          <li><a href="../index.html">home</a></li>
+          <li><a href="index.html">L1</a></li>
+          <li><a href="comptia2.html">L2</a></li>
+          <li><a href="comptia3.html">L3</a></li>
+          <li><a href="comptia4.html">L4</a></li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>

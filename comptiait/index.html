@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>digiwork/comptia/lez1</title>
     <link rel="stylesheet" href="../assets/css/file-css.css" />
+    <link rel="stylesheet" href="../assets/css/css_evidenzia.css">
     <link rel="stylesheet" href="assets/css/css_comptia.css" />
   </head>
   <body>
@@ -15,6 +16,7 @@
           <li><a href="comptia2.html">lezione2</a></li>
           <li><a href="comptia3.html">lezione3</a></li>
           <li><a href="comptia4.html">lezione4</a></li>
+          <li><a href="comptia4.html">L5</a></li>
         </ul>
       </div>
       <main>
@@ -25,39 +27,37 @@
             <li>struttura di un computer</li>
           </ul>
         </h2>
-        1. <strong>l'informatica</strong>è un insieme di calcolatori
+        1. <span class="pi"> l'informatica</span> è un insieme di calcolatori,
         memorizzatori in grado di elaborare vari tipi di informazioni, come
         numeri, testi, immagini e suoni. <br />
         Per manipolare queste informazioni, è necessaria una rappresentazione
         facilmente gestibile dall'elaboratore. <br />
         L'idea di fondo è usare la
-        <em
-          >presenza/assenza di carica elettrica o il passaggio/non passaggio di
-          corrente/luce1</em
-        >, adottando una rappresentazione binaria (a due valori)
+        <span class="pi">presenza/assenza di carica elettrica o il passaggio/non 
+        passaggio di corrente/luce</span>
+          , adottando una rappresentazione binaria (a due valori)
         dell'informazione. <br />
         Bit e Rappresentazione Binaria: Gli attuali computer derivano da
-        <em>sistemi elettromeccanici</em> con interruttori ON/OFF2. Per questo,
-        il linguaggio del computer è fatto di segnali elettrici binari, con due
-        valori possibili: 0 o 1. Questi valori sono chiamati cifre binarie o BIT
+        sistemi elettromeccanici con interruttori ON/OFF2. Per questo,
+        il linguaggio del computer è fatto di <span class="gr">segnali elettrici binari</span>, con due
+        valori possibili: <span class="gr">0 o 1</span>.Questi valori sono chiamati cifre binarie o BIT
         (Binary digIT). <br />
         Con 1 bit si possono rappresentare solo 2 informazioni diverse (es.
         sì/no, on/off, 0/1)2. Mettendo insieme più bit, si possono rappresentare
         più informazioni (es. 00/01/10/11)3. Informazioni complesse sono
-        memorizzate come sequenze di bit3. In generale,
-        <em>con N bit, si possono rappresentare 2^N informazioni diverse</em>
+        memorizzate come sequenze di bit. In generale,
+        <span class="gr">con N bit, si possono rappresentare 2^N informazioni diverse</span>
         (tutte le combinazioni di 0 e 1 su N posizioni) <br />. Viceversa, per
         rappresentare M informazioni, sono necessari N bit tali che 2^N >= M4. •
-        <em>Il Byte</em>: Una sequenza di 8 bit è chiamata Byte. Un byte può
+        <span class="pi">Il Byte</span> : Una sequenza di 8 bit è chiamata Byte. Un byte può
         rappresentare 2^8 = 256 informazioni diverse. Un byte rappresenta anche
         una singola porzione di memoria indirizzabile ed è usato come
-        <em
-          >unità di misura per le dimensioni della memoria e la velocità di
-          trasmissione</em
-        >. <br />
+        <span class="gr">unità di misura per le dimensioni della memoria e la velocità di
+          trasmissione.</span>
+           <br />
         Caratteri, numeri, immagini e suoni possono essere rappresentati usando
-        sequenze di byte. <br />• Codifica dei Caratteri: ◦
-        <span>ASCII (American Standard Code for Information Interchange)</span>:
+        sequenze di byte. <br />• Codifica dei Caratteri: <br> ◦
+        <span class="gr">ASCII (American Standard Code for Information Interchange)</span>:
         Utilizza codici su <em>7 bit</em>, permettendo di rappresentare 128
         caratteri diversi (2^7)5. È sufficiente per i simboli dell'alfabeto
         latino (0-9, A-Z, a-z, segni di interpunzione), circa 120 caratteri6. Ad
@@ -75,63 +75,67 @@
         esadecimale è spesso usato perché bastano 2 cifre esadecimali per
         rappresentare un byte, a differenza delle 3 cifre decimali necessarie8.
         Ad esempio, il valore esadecimale AC si converte in binario 10101100
-        (A=1010, C=1100)8. • Formato File e Unità di Misura: Ogni carattere
-        equivale a 1 byte (es. un testo di 32 caratteri genera un file di 32
+        (A=1010, C=1100)8. • Formato File e Unità di Misura: <span class="gr">Ogni carattere
+        equivale a 1 byte</span>  (es. un testo di 32 caratteri genera un file di 32
         byte)89. Ai dati si aggiungono informazioni di formattazione (grandezza,
         grassetto, corsivo, colore, ecc.)9. Programmi diversi usano metodi
         diversi per memorizzare le informazioni, richiedendo quindi diversi
         formati di file, riconoscibili dall'estensione (es. "programma.exe")
         <h3>unità di misura</h3>
-        . ◦ Larghezza di banda (bandwidth): Misura la quantità di informazioni
+        . ◦ <span class="pi">Larghezza di banda (bandwidth)</span>: Misura la quantità di informazioni
         che possono essere inviate o ricevute su una connessione di rete,
-        misurata in bit ("b" minuscola) o Byte ("B" maiuscola) per secondo. <br> ◦
-        Hertz (Hz): Misura la frequenza dei segnali di trasmissione o i cicli di
-        elaborazione per secondo10. 
+        misurata in bit <span class="gr">("b" minuscola) o Byte ("B" maiuscola) per secondo</span> . <br> ◦
+        <span class="pi">Hertz (Hz)</span> : Misura la frequenza dei segnali di trasmissione o i cicli di
+        elaborazione per secondo. 
         <h3>i bus</h3>
         i bus sono tutte quelle vie di comunicazione tra i vari componenti del computer.
         Tipologie di Trasferimento Dati:
         All'interno di un dispositivo informatico esistono diverse tecnologie di
-        trasferimento dati (es. bus della scheda madre, cavi SATA)10. ◦
-        Trasferimento Parallelo: Prevede di trasferire più bit alla volta (es. 8
-        bit o multipli di 8) utilizzando più "corsie" per i dati11. Componenti
-        che lo usano includono: Processore (CPU) e RAM, Processore (CPU) e
-        schede di espansione, Porte LPT e parallele (stampanti), Porte SCSI
-        (hard disk, lettori ottici), Porte PATA/IDE (hard disk, lettori
+        trasferimento dati (es. bus della scheda madre, cavi SATA)10. <br> ◦
+        <span class="gr">Trasferimento Parallelo: </span>  Prevede di trasferire più bit alla volta (es. 8
+        bit o multipli di 8) utilizzando più "corsie" per i dati. Componenti
+        che lo usano includono: <br> Processore (CPU) e RAM, Processore (CPU) e
+        schede di espansione, <br> Porte LPT e parallele (stampanti) line printer terminal <br>
+         Porte SCSI (small computer system interface ) 
+        (hard disk, lettori ottici),<br> Porte PATA/IDE (hard disk, lettori
         ottici)11. Gli svantaggi sono il numero di cavi necessari e il "signal
-        skew"11. ◦ Trasferimento Seriale: Utilizza una singola "corsia" per il
-        trasferimento delle informazioni12. È usato da: Porte DB9, Porte USB,
-        Porte IEEE 1394 (FireWire), Porte SATA, e alcune tipologie di
+        skew". <br> <span class="gr">◦ Trasferimento Seriale:</span>  Utilizza una singola "corsia" per il
+        trasferimento delle informazioni12. È usato da: <br> Porte DB9, <br> Porte USB,
+         <br>Porte IEEE 1394 (FireWire), <br> Porte SATA, <br>e alcune tipologie di
         collegamenti di rete (dial-up, Ethernet 10/100 Mbps, fibra ottica,
-        circuiti diretti)12. 2. Fondamenti dei Componenti del Computer •
-        Standardizzazione: I computer sono macchine complesse con componenti di
-        diversi produttori. La loro perfetta compatibilità è resa possibile
+        circuiti diretti). <br>
+        <strong>Fondamenti dei Componenti del Computer</strong>  
+        Standardizzazione: <br> I computer sono <span class="gr">macchine complesse con componenti di
+        diversi produttori</span>. La loro perfetta compatibilità è resa possibile
         dagli standard, che fissano regole precise riguardo dimensioni e
         software1314. Questo permette, ad esempio, che un connettore di una
-        marca si adatti a una porta di un'altra marca13. Chi produce componenti
-        per PC deve rispettare gli standard dimensionali e funzionali (es. SATA,
-        USB, PATA, Ethernet sono tutti standard)14. • Classificazione dei
-        Componenti: ◦ Componenti Primari: Necessari a qualsiasi dispositivo
+        marca si adatti a una porta di un'altra marca. Chi produce componenti
+        per PC deve rispettare gli <span class="gr">standard dimensionali e funzionali</span> (es. SATA,
+        USB, PATA, Ethernet sono tutti standard).
+         <strong>Classificazione dei
+        Componenti:</strong> <br>  ◦ Componenti Primari: Necessari a qualsiasi dispositivo
         informatico e non possono cambiare: Unità di elaborazione (processore),
         Scheda madre, Memoria di lavoro (RAM), Memoria di archiviazione
-        (storage)15. ◦ Componenti Secondari: Tipici dei PC e cambiano più
+        (storage). <br> ◦ Componenti Secondari: Tipici dei PC e cambiano più
         frequentemente (es. lettore floppy, porta RJ11, monitor CRT)16.
         Tuttavia, alcune "secondarie" come tastiera, mouse e monitor sono
-        essenziali per l'interazione umana con il computer1718. • Termini
-        Fondamentali: ◦ Hardware: La parte fisica di un personal computer,
+        essenziali per l'interazione umana con il computer1718. <br> • Termini
+        Fondamentali: <span class="pi">◦ Hardware:</span>  La parte fisica di un personal computer,
         inclusi elementi magnetici, ottici, meccanici ed elettronici che ne
         consentono il funzionamento1920. È ciò che "fa rumore se cade per
-        terra"20. ◦ Software: Un programma o un insieme di programmi in grado di
+        terra"20. <br>  ◦ <span class="pi">Software:</span>  Un programma o un insieme di programmi in grado di
         funzionare su un computer o qualsiasi altro apparato di
-        elaborazione2021. È la parte "intangibile" o "volatile", un insieme di
-        algoritmi memorizzati come cariche elettriche20. ◦ Firmware: Un
+        elaborazione. È la parte "intangibile" o "volatile", un insieme di
+        algoritmi memorizzati come cariche elettriche20. <br> <span class="pi"> Firmware:</span> ◦ Un
         programma integrato direttamente in un componente elettronico (chip,
         schede, periferiche)2021. Il suo scopo è avviare il componente stesso e
         permettergli di interagire con altri componenti tramite protocolli o
         interfacce2021. Un esempio è il BIOS sulla scheda madre, essenziale per
-        l'avvio dell'hardware20. L'hardware non funziona senza firmware20. ◦
-        Modello Logico di un Computer (Von Neumann): Prevede un processore, una
-        memoria centrale, un bus (vie di comunicazione) e una serie di porte di
-        input/output (I/O)2223. I dispositivi di I/O consentono di immettere
+        l'avvio dell'hardware20. L'hardware non funziona senza firmware.
+        <h3>Modello Logico di un Computer (Von Neumann):</h3> ◦
+         Prevede un <span class="gr">processore</span>, una <span class="gr">memoria</span>
+         centrale, un <span class="gr">bus</span> (vie di comunicazione) e una serie di porte di
+        input/output (I/O)2223. I <span class="gr">dispositivi di I/O</span> consentono di immettere
         dati/comandi (input) e di ottenere risposte/risultati (output)2224.
         Esempi di input: mouse, tastiera. Esempi di output: monitor, cuffie24. ◦
         Hot Swappable: Si riferisce a componenti che possono essere collegati o
@@ -285,6 +289,7 @@
           <li><a href="comptia2.html">lezione2</a></li>
           <li><a href="comptia3.html">lezione3</a></li>
           <li><a href="comptia4.html">lezione4</a></li>
+          <li><a href="comptia4.html">L5</a></li>
         </ul>
       </div>
     </div>

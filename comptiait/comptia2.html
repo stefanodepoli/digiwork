@@ -15,10 +15,156 @@
           <li><a href="index.html">L1</a></li>
           <li><a href="comptia3.html">L3</a></li>
           <li><a href="comptia4.html">L4</a></li>
+          <li><a href="comptia4.html">L5</a></li>
         </ul>
       </div>
       <main>
         <h1>lezione2</h1>
+        EZIONE 3 4 5
+CPU RAM E HARD DISK
+.
+Guida Completa allo Studio dei Processori, RAM e Dischi Fissi
+Questa guida è stata creata per fornirti una comprensione approfondita dei componenti fondamentali di un dispositivo informatico, basandosi sulle informazioni disponibili nelle fonti fornite.
+1. La Central Processing Unit (CPU)
+La CPU (Central Processing Unit) è il processore centrale presente in ogni dispositivo informatico, dai computer agli elettrodomestici. È il "cervello" che elabora i dati e le istruzioni fornite dai software. Le CPU contengono milioni di transistor, circuiti in grado di svolgere queste elaborazioni.
+1.1. Set di Istruzioni e Tipologie di Processori
+Le CPU supportano diversi set di istruzioni, ovvero codici che i software utilizzano per comunicare le operazioni da eseguire. I programmi sono creati per specifici set di istruzioni, il che significa che possono essere eseguiti solo da CPU compatibili.
+• I processori per PC (desktop) supportano molti set di istruzioni e possono effettuare elaborazioni più complesse, rientrando nella categoria CISC (Complex Instruction Set Computing).
+• I processori per device (portatili, tablet, smartphone) supportano meno set di istruzioni, svolgono elaborazioni più semplici ma sono più rapidi ed efficienti dal punto di vista energetico. Questi sono chiamati RISC (Reduced Instruction Set Computing).
+1.2. Produttori e Modelli di CPU
+I due maggiori produttori di CPU per PC sono Intel e Advanced Micro Devices (AMD). Non c'è compatibilità tra i prodotti delle due aziende.
+• Intel: È il maggiore produttore dal 1982. I modelli più noti includono la serie 80xx (8088, 8086, 80286), Pentium (lanciato nel 1993, seguito da Pentium 2, 3, 4) e la serie Core (suddivisa in i3, i5, i7, i9). Le architetture Core hanno visto diverse generazioni (Core, Nehalem, Sandy Bridge/Ivy Bridge, Haswell/Broadwell, Skylake).
+• AMD: È il secondo produttore e ha sviluppato chip propri dal 1996 con il K5, dopo aver inizialmente prodotto chip identici a quelli Intel. Tra i modelli più noti ci sono FX, Phenom II, Athlon II, A-Series/APU (ex Fusion) e Ryzen (Ryzen 3, 5, 7, 9). Per i server, sia Intel che AMD offrono linee specifiche come Intel Xeon e AMD Opteron/Threadripper/EPIC.
+1.3. Socket della CPU
+Il socket è la parte della scheda madre dedicata all'installazione della CPU.
+• Compatibilità: La CPU deve essere compatibile con il socket della scheda madre. Non solo il produttore (Intel o AMD), ma anche la generazione della CPU influisce sulla compatibilità del socket.
+• Tipi di Socket:
+o Intel utilizza il sistema LGA (Land Grid Array), dove i piedini sono sulla scheda madre e la CPU ha piazzole di contatto piatte. I nomi dei socket Intel spesso includono LGA e un numero (es. LGA 1156, LGA 1155, LGA 1150, LGA 1700).
+o AMD tradizionalmente usava il sistema PGA (Pin Grid Array), con i piedini sulla CPU e fori sulla scheda madre. Negli ultimi 2 anni, AMD è passata a una soluzione simile a LGA per le sue ultime generazioni di CPU (es. AM5). I socket AMD includono AM1, AM2+, AM3, AM3+.
+o Per Portatili e Sistemi Embedded:
+▪ Micro-PGA/μPGA: una versione ridotta del PGA.
+▪ BGA (Ball Grid Array): una tecnologia in cui i chip (CPU) sono saldati direttamente sulla scheda madre tramite sfere di stagno. Questo non è un vero e proprio socket e non permette l'upgrade della CPU.
+1.4. Installazione della CPU
+I passaggi generali per installare una CPU sono:
+1. Sganciare e sollevare il braccetto del socket.
+2. Sollevare il coperchio (per LGA) o il meccanismo (per PGA) e rimuovere l'eventuale cappuccio protettivo.
+3. Posizionare la CPU allineando le tacche (notch) e il triangolino dorato (o altro marcatore) sul processore con quelli sul socket. Non forzare la CPU, dovrebbe cadere in posizione per LGA, o infilarsi facilmente per PGA.
+4. Abbassare il coperchio (LGA) o il braccetto (PGA) e fissarlo.
+5. Applicare un sottile e uniforme strato di pasta termica sulla CPU.
+6. Montare il gruppo dissipatore-ventola e collegare il cavo di alimentazione della ventola alla scheda madre.
+1.5. Prestazioni della CPU
+La velocità della CPU è misurata in MIPS (Millions of Instructions Per Second), ovvero il numero di istruzioni che può eseguire in un secondo. Dipende da diversi fattori:
+• Frequenza di Clock: Misurata in megahertz (MHz) o gigahertz (GHz), è il numero di cicli di elaborazione al secondo. La frequenza è un dato prestazionale relativo, non assoluto. Una CPU con una frequenza più alta non è necessariamente più veloce di una con una frequenza più bassa se la loro architettura interna (es. numero di transistor/core) è diversa.
+• Numero di Core: Le CPU moderne contengono più processori fisici (multicore), con le CPU per PC che possono avere fino a 8 core (o più). Più core significano maggiore capacità di elaborazione.
+• Numero e Dimensione delle Cache: Le cache sono memorie molto veloci e vicine alla CPU che le forniscono rapidamente i dati da elaborare, compensando la minore velocità della RAM.
+o L1 Cache (Livello 1): La più piccola (es. 32 KB) e più veloce, presente su ogni core.
+o L2 Cache (Livello 2): Più grande (es. 256 KB) ma più lenta della L1, presente su ogni core.
+o L3 Cache (Livello 3): La più grande (anche oltre 100 MB) e più lenta, ma comunque più veloce della RAM. È comune a tutti i core.
+È possibile esaminare i parametri del processore, incluse le cache, tramite software come CPU-Z.
+1.6. Raffreddamento della CPU
+Le CPU generano molto calore che deve essere dissipato per prevenire danni e malfunzionamenti.
+• Sistemi di Dissipazione:
+o OEM (Original Equipment Manufacturer): Dissipatori forniti dai produttori di CPU, ideati per uno specifico processore e sufficienti per le impostazioni di fabbrica.
+o Dissipatori a Torre: Hanno uno sviluppo verticale con tubi di calore e una o più ventole attive.
+o Dissipatori a Liquido: Basati su un circuito chiuso in cui circola acqua (o altro liquido) che assorbe il calore dalla CPU e lo trasferisce a un radiatore raffreddato da ventole.
+• Installazione del Dissipatore: I dissipatori si fissano tramite viti o clip. È fondamentale applicare uno strato sottile di pasta termica tra la CPU e il dissipatore per migliorare il contatto e la conduzione del calore. Una quantità eccessiva o insufficiente di pasta può ridurre l'efficacia del raffreddamento.
+• Surriscaldamento: Se il sistema di raffreddamento è insufficiente, la CPU può spegnersi automaticamente per prevenire danni, causando lo spegnimento del PC sotto sforzo. Le cause possono includere ventole troppo piccole o scollegate, pasta termica mal distribuita o insufficiente, o accumulo di sporcizia (polvere, peli).
+1.7. Overclocking
+L'overclocking è la pratica di aumentare le prestazioni della CPU modificando i suoi valori di fabbrica.
+• Elementi Overclockabili: Frequenza del Front Side Bus (reference clock), moltiplicatore della CPU, voltaggio della CPU, velocità del bus della memoria RAM, frequenza del Northbridge (oggi integrato nella CPU).
+• Rischi: Può rovinare la CPU e il chipset, causare instabilità del sistema e invalidare la garanzia. I valori devono essere aumentati gradualmente.
+• Politiche dei Produttori:
+o Intel: Solo alcuni modelli sono "overclockabili", riconoscibili dalla lettera "K" finale nel nome.
+o AMD: Storicamente, tutti i modelli AMD sono overclockabili di default, senza blocchi di frequenza.
+• Gestione: L'overclocking può essere impostato tramite il BIOS o software specifici forniti dai produttori.
+2. Memoria RAM (Random Access Memory)
+La RAM è la memoria principale di un dispositivo informatico. Fornisce un'area di lavoro temporanea per il sistema operativo, i file e i programmi aperti. È molto più rapida del disco fisso per l'accesso ai dati.
+2.1. Concetti di Memoria RAM
+• SRAM (Static RAM): Memoria non volatile, conserva i dati anche senza alimentazione. Viene utilizzata nei dischi a stato solido (SSD).
+• DRAM (Dynamic RAM): Memoria volatile, perde i dati se non alimentata. È il tipo di RAM usato nei PC e nei dispositivi. Ogni volta che il computer si spegne o viene riavviato, la RAM viene azzerata e ripopolata.
+• Accesso Casuale ("Random Access"): La CPU può accedere a qualsiasi cella di memoria (un singolo bit) con la stessa velocità, indipendentemente dalla sua posizione fisica.
+2.2. Velocità della RAM
+Le memorie RAM si sono evolute per diventare sempre più veloci.
+• SDRAM (Synchronous DRAM): La velocità di elaborazione era sincronizzata con quella della scheda madre.
+• DDR (Double Data Rate): Introdotta nel 2003, raddoppiava la velocità della SDRAM. Le successive generazioni hanno continuato a raddoppiare o migliorare le prestazioni:
+o DDR2: 4x la velocità del sistema, consuma meno energia.
+o DDR3: 8x la velocità del sistema, 30% in meno di consumo rispetto a DDR2.
+o DDR4: Più veloce e con minor consumo rispetto a DDR3.
+o DDR5: L'ultima generazione (non dettagliata nelle fonti, ma menzionata come successiva alla DDR4).
+• Nomenclatura: Fino a DDR3, la velocità è espressa con codici che indicano la tipologia e la frequenza in Megahertz (MHz) (es. DDR-200, DDR2-400, DDR3-800) o la velocità in Megabyte al secondo (MB/s) (es. PC-1600, PC2-3200, PC3-6400). Per ogni ciclo di clock vengono inviati 8 byte, il che permette la conversione tra frequenza e velocità.
+2.3. Moduli RAM
+I moduli RAM ospitano i chip di memoria e si inseriscono negli slot della scheda madre.
+• DIMM (Dual Inline Memory Modules): Usati nei PC fissi, con due file di pin (contatti).
+• SO-DIMM (Small Outline Dual Inline Memory Modules): Formato ridotto, usati nei PC portatili.
+• Compatibilità: Le schede madri accettano un solo tipo di memorie (es. solo DDR3, non DDR2 o DDR4). La compatibilità è garantita da una tacca (notch) sul modulo che si allinea con una sagoma specifica sullo slot della scheda madre, impedendo l'inserimento di memorie non compatibili.
+• Numero di pin: Varia a seconda del tipo di modulo e generazione (es. SDRAM DIMM: 168 pin; DDR DIMM: 184 pin; DDR2/DDR3 DIMM: 240 pin; DDR4 DIMM: 288 pin).
+2.4. Architettura Dual Channel
+Le memorie DDR supportano l'architettura Dual Channel, che consente di usare due banchi di RAM in parallelo per raddoppiare la velocità di trasferimento dati.
+• Requisiti: Richiede un numero pari di memorie, della stessa grandezza e frequenza, inserite negli slot corretti (spesso identificati da colori diversi sulla scheda madre).
+• Vantaggi: Il guadagno in termini di prestazioni è di circa il 20%.
+2.5. Memoria Virtuale
+Quando la RAM fisica non è sufficiente, i sistemi operativi moderni (come Windows e Linux) utilizzano parte dello spazio sul disco fisso come memoria virtuale.
+• Nomi: Chiamata file di paging in Windows e file di swap in Linux.
+• Funzionamento: I dati meno usati nella RAM vengono spostati sul disco fisso, liberando spazio nella RAM fisica. Tuttavia, l'accesso ai dati dal disco fisso è molto più lento rispetto alla RAM, quindi un uso eccessivo della memoria virtuale causa rallentamenti del sistema.
+• Configurazione: La dimensione del file di paging può essere modificata in Windows, ma l'impostazione automatica è solitamente sufficiente. È possibile spostare il file di paging su un disco fisso secondario per ridurre il carico sul disco principale.
+2.6. Upgrade della RAM
+Aumentare la RAM è uno dei modi più semplici per migliorare le prestazioni di un PC.
+• Verifiche: Prima di un upgrade, occorre individuare la quantità e il tipo di memoria compatibile con la scheda madre. Bisogna controllare:
+o Il numero di slot disponibili e il tipo di chip (es. DDR3) già installato.
+o La memoria massima totale supportata dalla scheda madre (consultare il manuale).
+• Installazione: Per i PC fissi, si montano i moduli DIMM negli slot. Per i portatili, si usano i SO-DIMM, accedendo agli slot (spesso tramite uno sportellino o rimuovendo la tastiera) e inserendo i moduli obliquamente prima di spingerli verso il basso per fissarli con le clip.
+• Errori Comuni: Se la nuova RAM non viene riconosciuta, le cause possono essere un'errata inserimento nello slot, una scelta errata del tipo o della frequenza di memoria, o un difetto di produzione del banco stesso.
+3. Dischi Fissi Interni (Memoria di Massa)
+I dischi fissi sono la memoria secondaria di un PC, offrendo capacità elevate a costi relativamente contenuti.
+3.1. Tipologie: HDD vs. SSD
+Esistono due tipologie principali di dischi fissi:
+• Hard Disk Drive (HDD): La maggior parte dei dischi fissi tradizionali, basati su piatti magnetici rotanti e testine di lettura/scrittura.
+o Componenti: Uno o più piatti magnetici, un braccio attuatore con testine per ogni lato del piatto, e motori elettrici per la rotazione e il movimento del braccio. I dischi per PC fissi hanno piatti da 3.5", mentre quelli per portatili da 2.5".
+o Velocità: Dipende dai giri al minuto (RPM) (es. 5400 a 15000 RPM) e dalla dimensione della cache integrata.
+• Solid State Drive (SSD): Molto più veloci degli HDD, in quanto utilizzano memoria di tipo SRAM (Static RAM) e non hanno parti in movimento.
+o Vantaggi: Maggiore velocità (nessun tempo di avvio o posizionamento testina), minore consumo energetico (no motori), maggiore resistenza agli urti.
+o Svantaggi: Costo significativamente più elevato per gigabyte rispetto agli HDD. Il prezzo varia anche in base al tipo di celle di memoria (SLC vs MLC).
+La capacità dei dischi fissi si misura in gigabyte (GB) o terabyte (TB).
+3.2. Interfacce di Collegamento
+I dischi fissi possono essere collegati tramite diverse porte:
+• SCSI (Small Computer System Interface): Usato in passato sui server per collegare diversi dischi in "catena".
+• PATA (Parallel Advanced Technology Attachment) o IDE (Integrated Drive Electronics): Usato sui vecchi dischi fissi. Utilizza un cavo a nastro a 40 fili e permette di collegare due unità, che devono essere configurate come "master" e "slave" tramite jumper.
+• SATA (Serial ATA): Oggi lo standard su PC e server. Utilizza un cavo sottile a 7 fili per la trasmissione seriale dei dati, molto più veloce di PATA e SCSI. Supporta l'Hot-Swap se il controller SATA è impostato su AHCI (Advanced Controller Host Interface).
+Le velocità massime delle varie versioni di PATA e SATA sono aumentate gradualmente.
+3.3. Partizionamento
+Il partizionamento permette di suddividere il disco fisso in una o più parti, dette partizioni o volumi.
+• Tipi di Partizionamento (Windows):
+o MBR (Master Boot Record): Universale, permette fino a 4 partizioni primarie, ciascuna da massimo 2 TB. Una partizione può essere impostata come "attiva" per contenere il sistema operativo principale.
+o GPT (GUID Partition Table): Introdotto più recentemente, permette un numero quasi illimitato di partizioni (Windows ne supporta fino a 128) e dimensioni fino a zettabyte. Richiede che la scheda madre abbia UEFI per leggere dischi GPT.
+o Dischi Dinamici: Permettono di combinare più dischi assieme, ad esempio in configurazioni RAID.
+• Partizioni Nascoste: Molti PC portatili hanno partizioni nascoste, accessibili solo dal BIOS, usate come partizioni di ripristino (factory recovery partition) per riportare il PC alle impostazioni di fabbrica.
+• Strumenti: I dischi possono essere partizionati tramite Gestione disco in Windows o il comando diskpart dalla riga di comando.
+3.4. Formattazione e File System
+Dopo il partizionamento si procede con la formattazione.
+• Formattazione di Basso Livello: Suddivide la superficie dei piatti in settori (di norma 512 byte), svolta solitamente in fabbrica.
+• Formattazione di Alto Livello: Crea il file system, uno "schedario" che annota dove sono scritti i file sui settori, e crea una cartella radice.
+• File System supportati da Windows:
+o NTFS (New Technology File System): Scelta predefinita per le partizioni di Windows. Offre opzioni avanzate come protezione tramite cifratura, compressione, gestione dei permessi (ACL - Access Control List) e gestione quote. Riduce la frammentazione. Può presentare incompatibilità con sistemi operativi non Microsoft.
+o FAT32 (File Allocation Table 32): Predefinito prima di NTFS. Ha limiti di 4 GB per i singoli file e 2 TB per partizione.
+o exFAT (External FAT, anche detto FAT64): Unicamente per memorie esterne (dischi fissi e memorie flash), alza i limiti di FAT32 a 16 exabyte per i file e 64 zettabyte per partizione.
+• Strumenti: Il comando format permette di formattare una partizione specificando il file system.
+3.5. RAID (Redundant Array of Independent Disks)
+Il RAID permette di utilizzare più dischi fissi in parallelo per aumentare la velocità di trasferimento e/o garantire tolleranza ai guasti (ridondanza). I dati vengono salvati in modo ridondante su più dischi.
+• Gestione: Può avvenire via software (es. Gestione disco) o via hardware (tramite BIOS o controller RAID dedicati).
+• Tipologie di RAID più usate:
+o RAID 0 (Disk Striping): Richiede almeno 2 dischi. I dati sono distribuiti equamente tra i dischi, aumentando la velocità, ma se un disco si guasta tutti i dati vengono persi (nessuna ridondanza).
+o RAID 1 (Disk Mirroring): Richiede almeno 2 dischi. Tutti i dati sono scritti su entrambi i dischi (mirroring). Se uno si guasta, i dati sono recuperabili dall'altro (massima ridondanza), ma la capacità disponibile è dimezzata.
+o RAID 5 (Disk Striping with Distributed Parity): Richiede almeno 3 dischi. I dati sono distribuiti equamente e vengono creati dati di "parità" distribuiti su tutti i dischi, permettendo il recupero dei file in caso di rottura di un singolo disco.
+o RAID 6 (Disk Striping with Extra Parity): Simile a RAID 5, ma protegge dal guasto di due dischi. Richiede almeno 5 dischi.
+o RAID 10 (1+0) (Nested RAID): Richiede almeno 4 dischi. È un ibrido tra RAID 1 (per la ridondanza) e RAID 0 (per la velocità).
+3.6. Controllo Errori e Pulizia
+• Scandisk / Checkdisk (chkdsk): Strumenti di Windows per verificare e correggere errori del file system e cercare settori danneggiati sul disco.
+• Pulizia disco: Strumento di Windows per liberare spazio su disco eliminando file temporanei, file del cestino, e altri dati non necessari.
+3.7. Dischi Fissi Specializzati
+Esistono dischi fissi ottimizzati per usi specifici, oltre ai classici desktop/portatili:
+• NAS (Network Attached Storage): Piccoli server di archiviazione centralizzata collegati in rete, progettati per rimanere accesi per lunghi periodi. I dischi NAS sono pensati per questa operatività continua.
+• Videosorveglianza: Dischi progettati per salvare flussi video continui, con caratteristiche di durabilità e prestazioni adatte a questo scopo.
+Spero che questa guida dettagliata ti sia utile per lo studio. In bocca al lupo!
       </main>
       <div class="bott-avaind">
         <ul>
@@ -26,6 +172,7 @@
           <li><a href="index.html">L1</a></li>
           <li><a href="comptia3.html">L3</a></li>
           <li><a href="comptia4.html">L4</a></li>
+           <li><a href="comptia4.html">L5</a></li>
         </ul>
       </div>
    </div>
