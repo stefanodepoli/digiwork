@@ -5,11 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>digiwork/comptia/lez1</title>
     <link rel="stylesheet" href="../assets/css/file-css.css" />
-    <link rel="stylesheet" href="../assets/css/css_evidenzia.css">
+    <link rel="stylesheet" href="../assets/css/css_evidenzia.css" />
     <link rel="stylesheet" href="assets/css/css_comptia.css" />
   </head>
   <body>
-    <div >
+    <div>
       <div class="bott-avaind">
         <ul>
           <li><a href="../index.html">home</a></li>
@@ -33,32 +33,41 @@
         Per manipolare queste informazioni, è necessaria una rappresentazione
         facilmente gestibile dall'elaboratore. <br />
         L'idea di fondo è usare la
-        <span class="pi">presenza/assenza di carica elettrica o il passaggio/non 
-        passaggio di corrente/luce</span>
-          , adottando una rappresentazione binaria (a due valori)
+        <span class="pi"
+          >presenza/assenza di carica elettrica o il passaggio/non passaggio di
+          corrente/luce</span
+        >
+        , adottando una rappresentazione binaria (a due valori)
         dell'informazione. <br />
-        Bit e Rappresentazione Binaria: Gli attuali computer derivano da
-        sistemi elettromeccanici con interruttori ON/OFF2. Per questo,
-        il linguaggio del computer è fatto di <span class="gr">segnali elettrici binari</span>, con due
-        valori possibili: <span class="gr">0 o 1</span>.Questi valori sono chiamati cifre binarie o BIT
-        (Binary digIT). <br />
+        Bit e Rappresentazione Binaria: Gli attuali computer derivano da sistemi
+        elettromeccanici con interruttori ON/OFF2. Per questo, il linguaggio del
+        computer è fatto di <span class="gr">segnali elettrici binari</span>,
+        con due valori possibili: <span class="gr">0 o 1</span>.Questi valori
+        sono chiamati cifre binarie o BIT (Binary digIT). <br />
         Con 1 bit si possono rappresentare solo 2 informazioni diverse (es.
         sì/no, on/off, 0/1)2. Mettendo insieme più bit, si possono rappresentare
         più informazioni (es. 00/01/10/11)3. Informazioni complesse sono
         memorizzate come sequenze di bit. In generale,
-        <span class="gr">con N bit, si possono rappresentare 2^N informazioni diverse</span>
+        <span class="gr"
+          >con N bit, si possono rappresentare 2^N informazioni diverse</span
+        >
         (tutte le combinazioni di 0 e 1 su N posizioni) <br />. Viceversa, per
         rappresentare M informazioni, sono necessari N bit tali che 2^N >= M4. •
-        <span class="pi">Il Byte</span> : Una sequenza di 8 bit è chiamata Byte. Un byte può
-        rappresentare 2^8 = 256 informazioni diverse. Un byte rappresenta anche
-        una singola porzione di memoria indirizzabile ed è usato come
-        <span class="gr">unità di misura per le dimensioni della memoria e la velocità di
-          trasmissione.</span>
-           <br />
+        <span class="pi">Il Byte</span> : Una sequenza di 8 bit è chiamata Byte.
+        Un byte può rappresentare 2^8 = 256 informazioni diverse. Un byte
+        rappresenta anche una singola porzione di memoria indirizzabile ed è
+        usato come
+        <span class="gr"
+          >unità di misura per le dimensioni della memoria e la velocità di
+          trasmissione.</span
+        >
+        <br />
         Caratteri, numeri, immagini e suoni possono essere rappresentati usando
-        sequenze di byte. <br />• Codifica dei Caratteri: <br> ◦
-        <span class="gr">ASCII (American Standard Code for Information Interchange)</span>:
-        Utilizza codici su <em>7 bit</em>, permettendo di rappresentare 128
+        sequenze di byte. <br />• Codifica dei Caratteri: <br />
+        ◦
+        <span class="gr"
+          >ASCII (American Standard Code for Information Interchange)</span
+        >: Utilizza codici su <em>7 bit</em>, permettendo di rappresentare 128
         caratteri diversi (2^7)5. È sufficiente per i simboli dell'alfabeto
         latino (0-9, A-Z, a-z, segni di interpunzione), circa 120 caratteri6. Ad
         esempio, 1000001 rappresenta la 'A'5. Le parole sono codificate come
@@ -75,204 +84,273 @@
         esadecimale è spesso usato perché bastano 2 cifre esadecimali per
         rappresentare un byte, a differenza delle 3 cifre decimali necessarie8.
         Ad esempio, il valore esadecimale AC si converte in binario 10101100
-        (A=1010, C=1100)8. • Formato File e Unità di Misura: <span class="gr">Ogni carattere
-        equivale a 1 byte</span>  (es. un testo di 32 caratteri genera un file di 32
-        byte)89. Ai dati si aggiungono informazioni di formattazione (grandezza,
-        grassetto, corsivo, colore, ecc.)9. Programmi diversi usano metodi
-        diversi per memorizzare le informazioni, richiedendo quindi diversi
-        formati di file, riconoscibili dall'estensione (es. "programma.exe")
+        (A=1010, C=1100)8. • Formato File e Unità di Misura:
+        <span class="gr">Ogni carattere equivale a 1 byte</span> (es. un testo
+        di 32 caratteri genera un file di 32 byte)89. Ai dati si aggiungono
+        informazioni di formattazione (grandezza, grassetto, corsivo, colore,
+        ecc.)9. Programmi diversi usano metodi diversi per memorizzare le
+        informazioni, richiedendo quindi diversi formati di file, riconoscibili
+        dall'estensione (es. "programma.exe")
         <h3>unità di misura</h3>
-        . ◦ <span class="pi">Larghezza di banda (bandwidth)</span>: Misura la quantità di informazioni
-        che possono essere inviate o ricevute su una connessione di rete,
-        misurata in bit <span class="gr">("b" minuscola) o Byte ("B" maiuscola) per secondo</span> . <br> ◦
-        <span class="pi">Hertz (Hz)</span> : Misura la frequenza dei segnali di trasmissione o i cicli di
-        elaborazione per secondo. 
+        . ◦ <span class="pi">Larghezza di banda (bandwidth)</span>: Misura la
+        quantità di informazioni che possono essere inviate o ricevute su una
+        connessione di rete, misurata in bit
+        <span class="gr"
+          >("b" minuscola) o Byte ("B" maiuscola) per secondo</span
+        >
+        . <br />
+        ◦ <span class="pi">Hertz (Hz)</span> : Misura la frequenza dei segnali
+        di trasmissione o i cicli di elaborazione per secondo.
         <h3>i bus</h3>
-        i bus sono tutte quelle vie di comunicazione tra i vari componenti del computer.
-        Tipologie di Trasferimento Dati:
-        All'interno di un dispositivo informatico esistono diverse tecnologie di
-        trasferimento dati (es. bus della scheda madre, cavi SATA)10. <br> ◦
-        <span class="gr">Trasferimento Parallelo: </span>  Prevede di trasferire più bit alla volta (es. 8
-        bit o multipli di 8) utilizzando più "corsie" per i dati. Componenti
-        che lo usano includono: <br> Processore (CPU) e RAM, Processore (CPU) e
-        schede di espansione, <br> Porte LPT e parallele (stampanti) line printer terminal <br>
-         Porte SCSI (small computer system interface ) 
-        (hard disk, lettori ottici),<br> Porte PATA/IDE (hard disk, lettori
-        ottici)11. Gli svantaggi sono il numero di cavi necessari e il "signal
-        skew". <br> <span class="gr">◦ Trasferimento Seriale:</span>  Utilizza una singola "corsia" per il
-        trasferimento delle informazioni12. È usato da: <br> Porte DB9, <br> Porte USB,
-         <br>Porte IEEE 1394 (FireWire), <br> Porte SATA, <br>e alcune tipologie di
-        collegamenti di rete (dial-up, Ethernet 10/100 Mbps, fibra ottica,
-        circuiti diretti). <br>
-        <strong>Fondamenti dei Componenti del Computer</strong>  
-        Standardizzazione: <br> I computer sono <span class="gr">macchine complesse con componenti di
-        diversi produttori</span>. La loro perfetta compatibilità è resa possibile
-        dagli standard, che fissano regole precise riguardo dimensioni e
-        software1314. Questo permette, ad esempio, che un connettore di una
-        marca si adatti a una porta di un'altra marca. Chi produce componenti
-        per PC deve rispettare gli <span class="gr">standard dimensionali e funzionali</span> (es. SATA,
-        USB, PATA, Ethernet sono tutti standard).
-         <strong>Classificazione dei
-        Componenti:</strong> <br>  ◦ Componenti Primari: Necessari a qualsiasi dispositivo
-        informatico e non possono cambiare: Unità di elaborazione (processore),
-        Scheda madre, Memoria di lavoro (RAM), Memoria di archiviazione
-        (storage). <br> ◦ Componenti Secondari: Tipici dei PC e cambiano più
-        frequentemente (es. lettore floppy, porta RJ11, monitor CRT)16.
+        i bus sono tutte quelle vie di comunicazione tra i vari componenti del
+        computer. Tipologie di Trasferimento Dati: All'interno di un dispositivo
+        informatico esistono diverse tecnologie di trasferimento dati (es. bus
+        della scheda madre, cavi SATA)10. <br />
+        ◦ <span class="gr">Trasferimento Parallelo: </span> Prevede di
+        trasferire più bit alla volta (es. 8 bit o multipli di 8) utilizzando
+        più "corsie" per i dati. Componenti che lo usano includono: <br />
+        Processore (CPU) e RAM, Processore (CPU) e schede di espansione, <br />
+        Porte LPT e parallele (stampanti) line printer terminal <br />
+        Porte SCSI (small computer system interface ) (hard disk, lettori
+        ottici),<br />
+        Porte PATA/IDE (hard disk, lettori ottici)11. Gli svantaggi sono il
+        numero di cavi necessari e il "signal skew". <br />
+        <span class="gr">◦ Trasferimento Seriale:</span> Utilizza una singola
+        "corsia" per il trasferimento delle informazioni12. È usato da: <br />
+        Porte DB9, <br />
+        Porte USB, <br />Porte IEEE 1394 (FireWire), <br />
+        Porte SATA, <br />e alcune tipologie di collegamenti di rete (dial-up,
+        Ethernet 10/100 Mbps, fibra ottica, circuiti diretti). <br />
+        <strong>Fondamenti dei Componenti del Computer</strong>
+        Standardizzazione: <br />
+        I computer sono
+        <span class="gr"
+          >macchine complesse con componenti di diversi produttori</span
+        >. La loro perfetta compatibilità è resa possibile dagli standard, che
+        fissano regole precise riguardo dimensioni e software1314. Questo
+        permette, ad esempio, che un connettore di una marca si adatti a una
+        porta di un'altra marca. Chi produce componenti per PC deve rispettare
+        gli <span class="gr">standard dimensionali e funzionali</span> (es.
+        SATA, USB, PATA, Ethernet sono tutti standard).
+        <strong>Classificazione dei Componenti:</strong> <br />
+        ◦ <span class="pi">Componenti Primari</span>: Necessari a qualsiasi
+        dispositivo informatico e non possono cambiare: Unità di elaborazione
+        (processore), Scheda madre, Memoria di lavoro (RAM), Memoria di
+        archiviazione (storage). <br />
+        ◦ <span class="pi">Componenti Secondari</span>: Tipici dei PC e cambiano
+        più frequentemente (es. lettore floppy, porta RJ11, monitor CRT)16.
         Tuttavia, alcune "secondarie" come tastiera, mouse e monitor sono
-        essenziali per l'interazione umana con il computer1718. <br> • Termini
-        Fondamentali: <span class="pi">◦ Hardware:</span>  La parte fisica di un personal computer,
-        inclusi elementi magnetici, ottici, meccanici ed elettronici che ne
-        consentono il funzionamento1920. È ciò che "fa rumore se cade per
-        terra"20. <br>  ◦ <span class="pi">Software:</span>  Un programma o un insieme di programmi in grado di
-        funzionare su un computer o qualsiasi altro apparato di
-        elaborazione. È la parte "intangibile" o "volatile", un insieme di
-        algoritmi memorizzati come cariche elettriche20. <br> <span class="pi"> Firmware:</span> ◦ Un
-        programma integrato direttamente in un componente elettronico (chip,
-        schede, periferiche)2021. Il suo scopo è avviare il componente stesso e
-        permettergli di interagire con altri componenti tramite protocolli o
-        interfacce2021. Un esempio è il BIOS sulla scheda madre, essenziale per
-        l'avvio dell'hardware20. L'hardware non funziona senza firmware.
-        <h3>Modello Logico di un Computer (Von Neumann):</h3> ◦
-         Prevede un <span class="gr">processore</span>, una <span class="gr">memoria</span>
-         centrale, un <span class="gr">bus</span> (vie di comunicazione) e una serie di porte di
-        input/output (I/O)2223. I <span class="gr">dispositivi di I/O</span> consentono di immettere
-        dati/comandi (input) e di ottenere risposte/risultati (output)2224.
-        Esempi di input: mouse, tastiera. Esempi di output: monitor, cuffie24. ◦
-        Hot Swappable: Si riferisce a componenti che possono essere collegati o
-        scollegati da un sistema informatico senza la necessità di
-        spegnerlo1925. Le chiavette USB e gli hard disk SATA (con funzione
-        attiva) sono esempi25. La procedura di "smontaggio sicuro" serve solo a
-        prevenire la rimozione durante il trasferimento dati25. ◦ Processo:
-        Un'entità dinamica caricata su memoria RAM generata da un programma1925.
-        Ogni processo è identificato da un codice univoco chiamato PID25. È una
-        sequenza di "task" controllata da uno "scheduler" su un processore,
-        sotto la gestione del sistema operativo25. 3. La CPU (Central Processing
-        Unit) • Ruolo e Funzione: La CPU è il processore centrale di ogni
-        dispositivo informatico2627. Contiene milioni di circuiti chiamati
-        transistor, in grado di elaborare i dati e le istruzioni fornite dai
-        software2627. I transistor, con la loro capacità di stare in due stati
-        (ON/OFF, 1/0), formano un'architettura complessa per risolvere
-        istruzioni27. La CPU è collegata a quasi ogni altro componente del
-        computer tramite bus27. • Set di Istruzioni (CISC vs. RISC): Le CPU
-        supportano diversi set di istruzioni, che sono i codici con cui i
-        software comunicano le elaborazioni da effettuare2628. I programmi sono
-        creati per specifici set di istruzioni29. Hardware e software sono
-        interdipendenti: un aggiornamento dell'uno spesso richiede un
-        aggiornamento dell'altro28. ◦ CISC (Complex Instruction Set Computing):
-        Tipici dei processori per PC (es. Intel e AMD)2930. Mirano a ottenere il
-        maggior numero di risultati per ogni ciclo di elaborazione, con
-        istruzioni più complesse31. ◦ RISC (Reduced Instruction Set Computing):
+        essenziali per l'interazione umana con il computer. <br />
+        • Termini Fondamentali: <span class="pi">◦ Hardware:</span> La parte
+        fisica di un personal computer, inclusi elementi magnetici, ottici,
+        meccanici ed elettronici che ne consentono il funzionamento1920. È ciò
+        che "fa rumore se cade per terra"20. <br />
+        ◦ <span class="pi">Software:</span> Un programma o un insieme di
+        programmi in grado di funzionare su un computer o qualsiasi altro
+        apparato di elaborazione. È la parte "intangibile" o "volatile", un
+        insieme di algoritmi memorizzati come cariche elettriche20. <br />
+        <span class="pi"> Firmware:</span> ◦ Un programma integrato direttamente
+        in un componente elettronico (chip, schede, periferiche)2021. Il suo
+        scopo è avviare il componente stesso e permettergli di interagire con
+        altri componenti tramite protocolli o interfacce2021. Un esempio è il
+        BIOS sulla scheda madre, essenziale per l'avvio dell'hardware20.
+        L'hardware non funziona senza firmware.
+        <h3>Modello Logico di un Computer (Von Neumann):</h3>
+        ◦ Prevede un <span class="gr">processore</span>, una
+        <span class="gr">memoria</span> centrale, un
+        <span class="gr">bus</span> (vie di comunicazione) e una serie di porte
+        di input/output (I/O)2223. I
+        <span class="gr">dispositivi di I/O</span> consentono di immettere
+        dati/comandi (input) e di ottenere risposte/risultati (output). <br />
+        Esempi di input: mouse, tastiera. Esempi di output: monitor, cuffie24.
+        <br />
+        ◦ <span class="pi">Hot Swappable:</span> Si riferisce a componenti che
+        possono essere collegati o scollegati da un sistema informatico senza la
+        necessità di spegnerlo. Le chiavette USB e gli hard disk SATA (con
+        funzione attiva) sono esempi. <br />
+        La procedura di <span class="gr">"smontaggio sicuro"</span> serve solo a
+        prevenire la rimozione durante il trasferimento dati. <br />
+        ◦ <span class="pi">Processo:</span> Un'entità dinamica caricata su
+        memoria RAM generata da un programma. Ogni processo è identificato da un
+        codice univoco chiamato <span class="gr">PID</span>. È una
+        <span class="gr">sequenza di "task</span>" controllata da uno
+        <span class="gr">"scheduler"</span> su un processore, sotto la gestione
+        del sistema operativo. <br />
+        <h3>3. La CPU (Central Processing Unit)</h3>
+        • Ruolo e Funzione: La CPU è il processore centrale di ogni dispositivo
+        informatico. <br />
+        Contiene <span class="gr">milioni</span> di circuiti chiamati
+        <span class="gr">transistor</span> , in grado di elaborare i dati e le
+        istruzioni fornite dai software. <br />
+        I transistor, con la loro capacità di stare in due stati (ON/OFF, 1/0),
+        formano un'architettura complessa per risolvere istruzioni. <br />
+        La CPU è collegata a
+        <span class="gr">quasi ogni altro componente</span> del computer tramite
+        bus. <br />
+        • Set di Istruzioni (CISC vs. RISC): Le CPU supportano
+        <span class="gr">diversi set di istruzioni</span> , che sono i codici
+        con cui i software comunicano le elaborazioni da effettuare. I programmi
+        sono creati per specifici set di istruzioni.
+        <span class="gr">Hardware e software sono interdipendenti:</span> un
+        aggiornamento dell'uno spesso richiede un aggiornamento dell'altro.
+        <br />
+        ◦
+        <span class="pi">CISC (Complex Instruction Set Computing):</span> Tipici
+        dei processori per PC (es. Intel e AMD)2930. <br />
+        Mirano a ottenere il maggior numero di risultati per ogni ciclo di
+        elaborazione, con istruzioni più complesse. <br />
+        <span class="pi">RISC (Reduced Instruction Set Computing):</span>◦
         Tipici dei processori per dispositivi mobili (es. smartphone, tablet,
         come le CPU Apple M-series, basate su architettura ARM)3032. Supportano
         un set di istruzioni più ridotto, eseguendo elaborazioni più semplici ma
-        più rapidamente29. Sono più snelli e consumano meno energia3133. Apple
-        ha adottato storicamente CPU RISC, ha avuto una parentesi con Intel
-        (CISC) e poi è tornata alle proprie CPU basate su architettura RISC3133.
-        • Modelli e Produttori di CPU: ◦ Intel: Il maggiore produttore di CPU
-        dal 198232. Tra i modelli più noti ci sono 8088 (8 bit), 80286 (16 bit),
-        Pentium (32 bit, dal 1993) e la famiglia Core (64 bit)32. La famiglia
-        Core include i modelli i3, i5, i7, i9, suddivisi in diverse generazioni
-        (fino alla 14ª generazione attuale)3435. Altri modelli Intel includono
-        Pentium, Celeron (fascia medio-bassa), Atom (fascia bassa, netbook) e
-        Xeon (server)36. Intel ha la tendenza a cambiare i nomi delle famiglie
-        ogni due anni, rendendo a volte complessa l'identificazione3738. ◦ AMD
-        (Advanced Micro Devices): Il secondo produttore34. Fino al 1996
-        produceva chip identici a Intel, poi ha sviluppato i propri modelli
-        (come il K5), rendendoli incompatibili con Intel3439. I modelli attuali
-        includono FX (fascia alta), Phenom II, Athlon II, A-Series/APU (con GPU
-        integrata) e Opteron (server)40. Le CPU AMD Ryzen (Ryzen 3, 5, 7, 9)
-        sono più semplici da identificare e sono note per essere più stabili nei
-        nomi rispetto a Intel3537. ◦ Scelta della CPU: Non è sempre facile
-        capire le differenze tra le varie CPU. È consigliabile consultare siti
-        di benchmark (es. cpubenchmark.net) che testano i limiti prestazionali
-        delle CPU e forniscono punteggi di confronto36.... Questo è
-        particolarmente utile per i computer pre-assemblati come i portatili,
-        dove la CPU non è facilmente sostituibile42. • Prestazioni della CPU: La
-        velocità della CPU è misurata dal numero di istruzioni che può eseguire
-        in un secondo, spesso in MIPS (milioni di istruzioni per secondo)43.
-        Dipende da diversi fattori: ◦ Frequenza di Clock: Il numero di cicli di
+        più rapidamente. Sono più snelli e consumano meno energia. Apple ha
+        adottato storicamente CPU RISC, ha avuto una parentesi con Intel (CISC)
+        e poi è tornata alle proprie CPU basate su architettura RISC3133.
+        <h3>• Modelli e Produttori di CPU:</h3>
+        ◦ Intel: Il maggiore produttore di CPU dal 198232. Tra i modelli più
+        noti ci sono 8088 (8 bit), 80286 (16 bit), Pentium (32 bit, dal 1993) e
+        la famiglia Core (64 bit)32. La famiglia Core include i modelli i3, i5,
+        i7, i9, suddivisi in diverse generazioni (fino alla 14ª generazione
+        attuale)3435. Altri modelli Intel includono Pentium, Celeron (fascia
+        medio-bassa), Atom (fascia bassa, netbook) e Xeon (server)36. Intel ha
+        la tendenza a cambiare i nomi delle famiglie ogni due anni, rendendo a
+        volte complessa l'identificazione3738. <br />◦ AMD (Advanced Micro
+        Devices): Il secondo produttore34. Fino al 1996 produceva chip identici
+        a Intel, poi ha sviluppato i propri modelli (come il K5), rendendoli
+        incompatibili con Intel3439. I modelli attuali includono FX (fascia
+        alta), Phenom II, Athlon II, A-Series/APU (con GPU integrata) e Opteron
+        (server)40. Le CPU AMD Ryzen (Ryzen 3, 5, 7, 9) sono più semplici da
+        identificare e sono note per essere più stabili nei nomi rispetto a
+        Intel3537.
+        <h3>◦ Scelta della CPU:</h3>
+        Non è sempre facile capire le differenze tra le varie CPU. È
+        consigliabile consultare siti di
+        <span class="pi">benchmark (es. cpubenchmark.net)</span> che testano i
+        limiti prestazionali delle CPU e forniscono punteggi di confronto.
+        <br />
+        Questo è particolarmente utile per i computer pre-assemblati come i
+        portatili, dove la CPU non è facilmente sostituibile. <br />
+        • <span class="pi">Prestazioni della CPU:</span> <br />La velocità della
+        CPU è misurata dal numero di istruzioni che può eseguire in un secondo,
+        spesso in
+        <span class="gr">MIPS (milioni di istruzioni per secondo)</span>.
+        Dipende da diversi fattori: <br />
+        ◦<span class="pi">Frequenza di Clock:</span> Il numero di cicli di
         elaborazione al secondo che la CPU può effettuare, misurato in megahertz
-        (MHz) o gigahertz (GHz)44. Non va confusa con il numero di istruzioni al
-        secondo, poiché alcune istruzioni richiedono più cicli44. ◦ Numero di
-        Core: Alcune CPU contengono più processori (multicore), permettendo
-        elaborazioni parallele44. Le CPU per PC arrivano fino a 8 core44. La
-        funzione Hyper-Threading permette a una CPU single-core di funzionare
-        come se avesse due core4546. ◦ Cache: Memorie più veloci e vicine alla
-        CPU rispetto alla RAM, usate per fornire rapidamente i dati da
-        elaborare47. Più grandi sono le cache (Livello 1, Livello 2, Livello 3),
-        maggiori sono le prestazioni4748. ◦ Larghezza dei Registri: I registri
-        della CPU immagazzinano temporaneamente dati e comandi49.... La loro
-        larghezza (es. 8, 16, 32, 64 bit) determina la dimensione
-        dell'istruzione che può essere calcolata in una singola unità di
-        tempo52. Le CPU moderne sono a 64 bit, il che permette di elaborare
-        istruzioni più grandi e complesse rispetto ai 32 bit5253. • Socket e
-        Compatibilità: La CPU si inserisce in uno zoccolo (socket) sulla scheda
-        madre4054. Ogni scheda madre supporta tipi specifici di processori e
-        socket40. La stretta correlazione tra CPU e scheda madre rende quasi
-        impossibile sostituire la CPU senza cambiare anche la scheda madre54. ◦
-        Intel usa il tipo LGA (Land Grid Array), dove i piedini sono sulla
-        scheda madre e la CPU ha le piazzole (pad)54. Es. LGA 1156, LGA 1155,
-        LGA 115055. I socket Intel recenti tendono a essere compatibili con più
-        generazioni di CPU (es. fino a 4 generazioni)56. ◦ AMD tradizionalmente
-        usava il PGA (Pin Grid Array), dove i piedini sono sulla CPU e la scheda
-        madre ha solo i fori54. Es. AM1, AM2+, AM3, AM3+55. Dalla settima
-        generazione, anche AMD ha adottato lo standard LGA56. I socket AMD
-        tendono a essere più longevi in termini di compatibilità con diverse
-        generazioni di CPU (es. AM4 compatibile con 5 generazioni)56. ◦ Sui
-        portatili si usano socket più piccoli come Micro-PGA/μPGA e BGA (Ball
-        Grid Array)55. • Installazione e Raffreddamento della CPU: ◦
-        Installazione: Per installare una CPU è sufficiente montarla e fissarla
-        sul socket allineando le tacche48. È fondamentale applicare uno strato
-        sottile e uniforme di pasta termica tra la CPU e il dissipatore4357.
-        Successivamente, si monta il gruppo dissipatore-ventola e si collega il
-        cavo di alimentazione della ventola48.... La scheda madre si configura
-        automaticamente per la CPU grazie alla funzione CPUID48. ◦
-        Raffreddamento: Le CPU generano molto calore che deve essere
-        dissipato59. I produttori di CPU a volte forniscono sistemi di
-        dissipazione OEM (Original Equipment Manufacturer), ideati per un
-        processore specifico e garantiti con le impostazioni di fabbrica5960.
-        Sistemi di altri produttori possono essere più performanti60. Esistono
-        anche dissipatori a liquido per chi pratica l'overclocking o cerca
-        sistemi silenziosi60. ◦ Surriscaldamento: Se il sistema di
+        (MHz) o gigahertz (GHz).Non va confusa con il numero di istruzioni al
+        secondo, poiché alcune istruzioni richiedono più cicli. <br />
+        ◦ <span class="pi">Numero di Core: </span>Alcune CPU contengono più
+        processori (multicore), permettendo
+        <span class="gr">elaborazioni parallele.</span> Le CPU per PC arrivano
+        fino a <span class="gr">8 core.</span> La funzione
+        <span class="gr">Hyper-Threading</span> permette a una CPU single-core
+        di funzionare come se avesse due core4546. <br />
+        ◦ <span class="pi">Cache:</span> Memorie più veloci e vicine alla CPU
+        rispetto alla RAM, usate per fornire rapidamente i dati da elaborare.
+        Più grandi sono le cache (Livello 1, Livello 2, Livello 3), maggiori
+        sono le prestazioni4748. <br />
+        ◦ <span class="pi">Larghezza dei Registri:</span> I registri della CPU
+        immagazzinano temporaneamente dati e comandi. La loro larghezza (es. 8,
+        16, 32, 64 bit) determina la dimensione dell'istruzione che può essere
+        calcolata in una singola unità di tempo. Le CPU moderne sono a 64 bit,
+        il che permette di elaborare istruzioni più grandi e complesse rispetto
+        ai 32 bit5253.
+        <h3>Socket e Compatibilità:</h3>
+        La CPU si inserisce in uno zoccolo (socket) sulla scheda madre. <br />
+        Ogni scheda madre supporta tipi specifici di processori e socket. <br />
+        La stretta correlazione tra CPU e scheda madre rende quasi impossibile
+        sostituire la CPU senza cambiare anche la scheda madre54. <br />
+        ◦ <span class="pi">Intel usa il tipo LGA (Land Grid Array),</span> dove
+        i <span class="gr">piedin</span>i sono sulla scheda madre e la CPU ha le
+        <span class="gr">piazzole (pad)</span>. Es. LGA 1156, LGA 1155, LGA
+        115055. I socket Intel recenti tendono a essere compatibili con più
+        generazioni di CPU (es. fino a 4 generazioni). <br />◦
+        <span class="pi"
+          >AMD tradizionalmente usava il PGA (Pin Grid Array)</span
+        >, dove i <span class="gr">piedini sono sulla CPU</span> e la scheda
+        madre ha solo i fori. Es. AM1, AM2+, AM3, AM3+55.
+        <span class="gr"
+          >Dalla settima generazione, anche AMD ha adottato lo standard
+          LGA</span
+        >. <br />
+        I socket AMD tendono a essere più <span class="gr">longevi</span> in
+        termini di compatibilità con diverse generazioni di CPU (es. AM4
+        compatibile con 5 generazioni). <br />
+        ◦ Sui <span class="gr">portatili</span> si usano socket più piccoli come
+        <span class="pi">Micro-PGA/μPGA e BGA (Ball Grid Array)</span>.
+        <h3>Installazione e Raffreddamento della CPU:</h3>
+        ◦ Installazione: Per installare una CPU è sufficiente montarla e
+        <span class="gr">fissarla</span> sul socket allineando le tacche. È
+        fondamentale applicare uno strato sottile e uniforme di
+        <span class="gr">pasta termica</span> tra la CPU e il dissipatore.
+        Successivamente, si monta il gruppo
+        <span class="gr">dissipatore-ventola</span> e si collega il
+        <span class="gr">cavo di alimentazione della ventola.</span>... La
+        scheda madre si configura automaticamente per la CPU grazie alla
+        funzione <span class="gr">CPUID</span>. ◦ Raffreddamento: Le CPU
+        generano molto calore che deve essere dissipato. I produttori di CPU a
+        volte forniscono sistemi di dissipazione
+        <span class="gr">OEM (Original Equipment Manufacturer),</span> ideati
+        per un processore specifico e garantiti con le impostazioni di fabbrica.
+        Sistemi di altri produttori possono essere
+        <span class="gr">più performanti.</span> Esistono anche dissipatori a
+        <span class="gr"
+          >liquido per chi pratica l'overclocking o cerca sistemi
+          silenziosi</span
+        >. <br />
+        ◦<span class="pi">Surriscaldamento:</span> Se il sistema di
         raffreddamento è insufficiente, la CPU può spegnersi automaticamente per
         prevenire danni (es. PC si spegne dopo qualche minuto o sotto sforzo)57.
         Le cause possono essere: ventola non abbastanza grande, sistema di
         raffreddamento montato male (es. ventola scollegata), pasta termica
         eccessiva/insufficiente/mal distribuita, o sporcizia (polvere, peli) che
-        ostruisce le prese d'aria5761. • Overclocking: Una pratica che permette
-        di aumentare le prestazioni della CPU61. Gli elementi che possono essere
-        overclockati includono: la frequenza del Front Side Bus (reference
-        clock), il moltiplicatore della CPU, il voltaggio della CPU (per più
-        energia), la velocità del bus della RAM e la frequenza del
-        Northbridge61. È un'operazione rischiosa: può rovinare la CPU e il
-        chipset, causare instabilità del sistema e invalidare la garanzia. I
-        valori vanno aumentati gradualmente49. 4. Scheda Madre e Case • La
-        Scheda Madre: È la scheda elettronica principale del computer, sulla
-        quale vengono inserite o collegate tutte le altre componenti1562. Ha
-        formati diversi, tutti standardizzati, con dimensioni precise e fori per
-        il fissaggio in posizioni standard63.... I formati più comuni includono
-        ATX, Micro ATX e Mini ITX64. La scelta del formato della scheda madre
-        dipende dalle esigenze, come la compattezza desiderata o il numero di
-        slot per RAM e schede video64. Le schede madre più grandi (es. EATX o XL
-        ATX) offrono più slot RAM (fino a 12) e più slot di espansione per
-        schede video64. Sul retro, tutte le schede madre hanno un rettangolo
-        standardizzato da cui si affacciano i connettori (video, USB, rete,
-        audio)66. • Il Case: È il contenitore (generalmente metallico) che
-        ospita i componenti del computer62. I case hanno uno sviluppo verticale,
-        classificati per dimensione (Tower, Mid Tower, Mini Tower, ecc.)6264. ◦
-        Organizzazione Interna: Il case ha una parete verticale su cui viene
-        fissata la scheda madre6267. La scheda madre non viene avvitata
-        direttamente al case, ma su piedini di ottone (standoffs) che la tengono
+        ostruisce le prese d'aria5761. <br />
+        • <span class="pi">Overclocking:</span> Una pratica che permette di
+        aumentare le prestazioni della CPU. <br />
+        Gli elementi che possono essere overclockati includono:
+        <ul>
+          <li>la frequenza del Front Side Bus (reference clock),</li>
+          <li>il moltiplicatore della CPU,</li>
+          <li>il voltaggio della CPU (per più energia),</li>
+          <li>la velocità del bus della RAM</li>
+          <li>e la frequenza del Northbridge</li>
+        </ul>
+        È un'operazione rischiosa: può rovinare la CPU e il chipset, causare
+        instabilità del sistema e invalidare la garanzia. I valori vanno
+        aumentati gradualmente.
+        <h3>Scheda Madre e Case</h3>
+        • <span class="pi">La Scheda Madre:</span> È la scheda elettronica
+        principale del computer, sulla quale vengono inserite o collegate tutte
+        le altre componenti. <br />
+        Ha <span class="gr">formati diversi</span>, tutti standardizzati, con
+        dimensioni precise e fori per il fissaggio in posizioni standard.... I
+        formati più comuni includono
+        <span class="gr">ATX, Micro ATX e Mini ITX</span>. La scelta del formato
+        della scheda madre dipende dalle esigenze, come la compattezza
+        desiderata o il numero di slot per RAM e schede video. <br />
+        Le schede madre più grandi (es. <span class="gr">EATX o XL ATX</span>)
+        offrono <span class="gr">più slot</span> RAM (fino a 12) e più slot di
+        espansione per schede video. <br />
+        Sul retro, tutte le schede madre hanno un
+        <span class="gr">rettangolo standardizzato</span> da cui si affacciano i
+        connettori (video, USB, rete, audio)66.
+        <span class="pi">Il Case:</span> È il contenitore (generalmente
+        metallico) che ospita i componenti del computer. I case hanno uno
+        sviluppo verticale, classificati per dimensione
+        <span class="gr">(Tower, Mid Tower, Mini Tower, ecc.)</span>. <br> ◦
+        <span class="gr">Organizzazione Interna:</span> Il case ha una parete verticale su cui viene
+        fissata la scheda madre. <br> La scheda madre non viene avvitata
+        direttamente al case, ma su piedini di <span class="gr">ottone</span> (standoffs) che la tengono
         leggermente sollevata (circa 4-5 mm)65. Alcuni case moderni hanno
-        distanziatori integrati65. ◦ Alloggiamenti: I case moderni spesso hanno
+        distanziatori integrati. ◦ Alloggiamenti: I case moderni spesso hanno
         l'alimentatore posizionato in basso6869. Contengono alloggiamenti per
         unità di archiviazione come gli hard disk, che nei case moderni sono
         spesso disposti in "cassetti" frontali per facilitare
         l'installazione6768. Possono esserci anche alloggiamenti per
         lettori/masterizzatori ottici (oggi meno comuni)6768. ◦ Ventole: Il case
         ospita ventole frontali e posteriori per l'immissione e l'espulsione
-        dell'aria, garantendo il raffreddamento dei componenti70. Le dimensioni
-        delle ventole sono standardizzate70. ◦ Pannelli e Connessioni: Il
+        dell'aria, garantendo il raffreddamento dei componenti. Le dimensioni
+        delle ventole sono standardizzate. ◦ Pannelli e Connessioni: Il
         pannello frontale del case può includere l'interruttore di
         accensione/reset, LED di stato (power, attività hard disk), connettori
         USB (Tipo A, Tipo C) e jack audio70. Il pannello posteriore presenta
